@@ -1,4 +1,5 @@
-### Hi there 👋
+## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/header.jpg)](https://github.com/evantayloryates)
+
 
 <!--
 **evantayloryates/evantayloryates** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
