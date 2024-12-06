@@ -4,11 +4,13 @@
 
 <!-- ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif)](https://github.com/evantayloryates) -->
 
-<p align='center'>
+<!-- style p tag to reserve 500px of vertical space -->
+<p align='center'
+  style='height: 500px;'
+>
   <img 
     src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif' 
     width='100%'
-    height='200px'
   />
 </p>
 
