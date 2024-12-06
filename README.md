@@ -1,5 +1,5 @@
 <!-- ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/header.jpg)](https://github.com/evantayloryates) -->
-## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/example.mp4)](https://github.com/evantayloryates)
+## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/output.gif)](https://github.com/evantayloryates)
 
 
 <h1 align="center">Hi 👋, I'm Taylor</h1>
