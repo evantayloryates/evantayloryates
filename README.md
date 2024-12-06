@@ -1,7 +1,8 @@
 <!-- ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/header.jpg)](https://github.com/evantayloryates) -->
-## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/example.gif)](https://github.com/evantayloryates)
 
-## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif)](https://github.com/evantayloryates)
+<!-- ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/example.gif)](https://github.com/evantayloryates) -->
+
+<!-- ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif)](https://github.com/evantayloryates) -->
 
 <p align='center'>
   <img src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif' width='100%' />
