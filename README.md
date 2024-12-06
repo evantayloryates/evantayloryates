@@ -7,8 +7,7 @@
 <p align='center'>
   <img 
     src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif'
-    width='100%'
-    style='width: 100%; aspect-ratio: 1 / 1; object-fit: cover;'
+    style='width: 100%; aspect-ratio: 9/16; object-fit: cover;'
   />
 </p>
 
