@@ -5,7 +5,11 @@
 <!-- ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif)](https://github.com/evantayloryates) -->
 
 <p align='center'>
-  <img src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif' width='100%' />
+  <img 
+    src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif'
+    width='100%'
+    style='width: 100%; aspect-ratio: 1 / 1; object-fit: cover;'
+  />
 </p>
 
 <h1 align="center">Hi 👋, I'm Taylor</h1>
