@@ -1,7 +1,7 @@
 <!-- ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/header.jpg)](https://github.com/evantayloryates) -->
 ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/example.gif)](https://github.com/evantayloryates)
 
-## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/example.gif)](https://github.com/evantayloryates)
+## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif)](https://github.com/evantayloryates)
 
 
 <h1 align="center">Hi 👋, I'm Taylor</h1>
