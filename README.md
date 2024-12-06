@@ -4,17 +4,12 @@
 
 <!-- ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif)](https://github.com/evantayloryates) -->
 
-<!-- <p align='center'>
+<p align='center'>
   <img 
     src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif'
-    style='width: 100%; aspect-ratio: 9/16; object-fit: cover;'
+    width='100%'
+    height='100%'
   />
-</p> -->
-
-<p align='center' style='width:100%; max-width:400px; position:relative;'>
-  <span style='display:block; width:100%; padding-bottom:100%;'></span>
-  <img src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif'
-       style='width:100%; height:100%; position:absolute; top:0; left:0; object-fit:cover;' />
 </p>
 
 <h1 align="center">Hi 👋, I'm Taylor</h1>
