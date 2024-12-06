@@ -4,25 +4,13 @@
 
 <!-- ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif)](https://github.com/evantayloryates) -->
 
-<!-- <p align='center'>
+<p align='center'>
   <img 
-    src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif'
+    src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif' 
     width='100%'
-    height='100%'
-  />
-</p> -->
-
-<p align='center' style='position: relative; width:100%; max-width:400px; margin:auto;'>
-  <!-- This container sets the aspect ratio (1:1) -->
-  <span style='display:block; width:100%; padding-bottom:100%; background:url(https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.jpg) center/cover no-repeat;'></span>
-  
-  <!-- The GIF overlayed absolutely -->
-  <img 
-    src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif'
-    style='position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;'
+    height='200px'
   />
 </p>
-
 
 <h1 align="center">Hi 👋, I'm Taylor</h1>
 <h3 align="center">a full-stack engineer, specializing in web-based VFX engineering</h3>
