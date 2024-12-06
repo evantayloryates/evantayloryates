@@ -3,6 +3,9 @@
 
 ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif)](https://github.com/evantayloryates)
 
+<p align='center'>
+  <img src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif' width='100%' />
+</p>
 
 <h1 align="center">Hi 👋, I'm Taylor</h1>
 <h3 align="center">a full-stack engineer, specializing in web-based VFX engineering</h3>
