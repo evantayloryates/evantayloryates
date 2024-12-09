@@ -9,7 +9,7 @@
   style='height: 500px;'
 >
   <img 
-    src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/header-2.jpg' 
+    src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/header-2.png' 
     width='100%'
   />
 </p>
