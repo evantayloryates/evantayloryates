@@ -5,14 +5,14 @@
 <!-- ## [![taylor's header](https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/ex-1.gif)](https://github.com/evantayloryates) -->
 
 <!-- style p tag to reserve 500px of vertical space -->
-<p align='center'
+<!-- <p align='center'
   style='height: 500px;'
 >
   <img 
     src='https://github.com/evantayloryates/evantayloryates/blob/master/assets/images/header-2.png' 
     width='100%'
   />
-</p>
+</p> -->
 
 <!-- <p align='center'
   style='height: 500px;'
