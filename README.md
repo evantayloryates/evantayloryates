@@ -1,62 +1,76 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/signal-chain/assets/hero.svg"
-    alt="Taylor Yates — web, motion, and systems"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console/assets/console.svg"
+    alt="Taylor's creative systems operator console"
     width="100%"
   />
 </p>
 
-<p align="center">
-  <a href="mailto:evantayloryates@gmail.com">Email</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/evantayloryates?tab=repositories">Repositories</a>
-  &nbsp;·&nbsp;
-  New York, NY
-</p>
+```console
+$ whoami
+Taylor Yates — full-stack engineer, media-tool builder, systems untangler
 
-I’m Taylor, a full-stack engineer at **Spaceback** working where product
-engineering, browser media, and creative automation overlap. I like the seam
-between an expressive interface and the machinery required to render it
-reliably.
+$ location
+New York, NY
 
-### The signal chain
+$ current_process
+Building creative technology at Spaceback
+```
 
-| 01 · INPUT | 02 · ENGINE | 03 · OUTPUT |
-| :--- | :--- | :--- |
-| An ambitious product idea | React, TypeScript, Rails, Node, media APIs | A creative tool people can trust |
-| Messy media and campaign data | Render pipelines, queues, observability | Repeatable, high-volume output |
-| A slow manual workflow | Automation with judgment in the loop | More room for the interesting work |
+### `man taylor`
 
-### On the bench
+I build the parts between **“this should be possible”** and **“this works every
+time.”** Most often, that means product interfaces, media pipelines, render
+infrastructure, and the operational glue that lets all three behave like one
+system.
 
-- **Browser-native media** — WebCodecs, canvas, streams, playback, and the
-  awkward edges between them.
-- **Creative systems** — tools that connect editing, rendering, and delivery
-  without sanding off the craft.
-- **Agent-assisted software** — practical ways for software agents to extend a
-  team’s leverage without hiding the underlying system.
+```yaml
+inputs:
+  - product questions with technical consequences
+  - video, motion, and campaign data
+  - workflows that have outgrown manual operation
 
-### Selected source
+runtime:
+  interface: [React, TypeScript, HTML, CSS]
+  services: [Rails, Node.js, PostgreSQL, Redis]
+  media: [WebCodecs, MediaSource, Canvas, WebGL, ExtendScript]
+  operations: [AWS, Docker, GitHub Actions, observability]
 
-| Project | What it explores |
-| --- | --- |
-| [dotfiles](https://github.com/evantayloryates/dotfiles) | A portable, opinionated development environment |
-| [.hammerspoon](https://github.com/evantayloryates/.hammerspoon) | Granular macOS window management in Lua |
-| [cinematic-display](https://github.com/evantayloryates/cinematic-display) | Cinematic layouts built for the browser |
-| [bialetti](https://github.com/evantayloryates/bialetti) | A runnable HTML5 video display-ad experiment |
+returns:
+  - tools with a clear point of view
+  - systems that explain themselves
+  - fewer mysterious render failures
+```
+
+### `/proc/experiments`
+
+| PID | Process | State |
+| ---: | --- | :---: |
+| [01](https://github.com/evantayloryates/dotfiles) | Make a development environment reproducible | `running` |
+| [02](https://github.com/evantayloryates/.hammerspoon) | Treat macOS window management as programmable space | `stable` |
+| [03](https://github.com/evantayloryates/cinematic-display) | Explore cinematic display layouts in the browser | `lab` |
+| [04](https://github.com/evantayloryates/bialetti) | Package video as a runnable HTML5 display ad | `archive` |
 
 <details>
-  <summary><strong>Toolbox / expanded view</strong></summary>
+  <summary><code>$ ./about --verbose</code></summary>
   <br />
 
-  **Product & interface** · React · TypeScript · JavaScript · HTML · CSS · Figma<br />
-  **Services & data** · Ruby on Rails · Node.js · PostgreSQL · Redis · AWS<br />
-  **Media & motion** · WebCodecs · MediaSource · Canvas · WebGL · ExtendScript<br />
-  **Delivery** · Docker · GitHub Actions · observability · render automation
+  I’m interested in software that touches a medium, not only a database:
+  timelines, players, compositors, renderers, creative editors, and the systems
+  behind them. I’m equally happy tracing a production failure through a queue
+  as I am tuning the interaction that caused the job to exist.
+
+  The recurring goal is simple: make powerful machinery feel direct.
 </details>
 
-<br />
+### `open_channel`
+
+```text
+email  →  evantayloryates@gmail.com
+github →  github.com/evantayloryates
+```
 
 <p align="center">
-  <sub>Good software should feel edited: intentional, legible, and free of dead frames.</sub>
+  <sub>session active · curiosity never daemonized</sub>
 </p>
+
