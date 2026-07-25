@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "🚀 Installing dotfiles for Evan Taylor Yates..."
 
