@@ -1,83 +1,98 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-signal-map/assets/uplink.svg"
-    alt="Taylor Yates — New York signal uplink"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-playhead-3d/assets/playhead.svg"
+    alt="Taylor Yates — three-dimensional playhead inspection"
     width="100%"
   />
 </p>
 
 ```text
-UPLINK  NYC       OPERATOR  TAYLOR YATES       SIGNAL  CREATIVE SYSTEMS
+OBJECT  PLAYHEAD-01       MATERIAL  INTENT + CODE       VIEW  INTERACTIVE
 ```
 
-## Coordinates are concrete. The loop is conceptual.
+## A profile with another dimension.
 
-I’m a full-stack engineer at **Spaceback**, working from New York across product
-interfaces, browser media, backend services, rendering, and operations.
+I’m **Taylor Yates**, a full-stack engineer at **Spaceback** working across
+creative interfaces, browser media, render systems, and production
+infrastructure.
 
-The interactive map below uses real New York coordinates as the canvas for the
-feedback loop I care about: **product → media → systems → product**. Pan, zoom,
-and inspect it directly in GitHub.
+The playhead below is not an image. GitHub turns the ASCII STL source into a
+native interactive 3D viewer. Drag to inspect the object and switch between the
+viewer’s solid and wireframe modes.
 
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "Taylor / New York",
-        "description": "Creative systems uplink",
-        "marker-color": "#ff4f64",
-        "marker-size": "large",
-        "marker-symbol": "star"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.0060, 40.7128]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "product → media → systems → product",
-        "stroke": "#3ddbd9",
-        "stroke-width": 5,
-        "stroke-opacity": 0.9
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-74.0060, 40.7128],
-          [-73.9442, 40.6782],
-          [-73.8648, 40.7380],
-          [-74.0060, 40.7128]
-        ]
-      }
-    }
-  ]
-}
+```stl
+solid creative_playhead
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 0 3 0
+      vertex 4 1.5 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 1
+      vertex 4 1.5 1
+      vertex 0 3 1
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 0 1
+      vertex 0 3 1
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 3 1
+      vertex 0 3 0
+    endloop
+  endfacet
+  facet normal 0.351 0.936 0
+    outer loop
+      vertex 0 3 0
+      vertex 0 3 1
+      vertex 4 1.5 1
+    endloop
+  endfacet
+  facet normal 0.351 0.936 0
+    outer loop
+      vertex 0 3 0
+      vertex 4 1.5 1
+      vertex 4 1.5 0
+    endloop
+  endfacet
+  facet normal 0.351 -0.936 0
+    outer loop
+      vertex 4 1.5 0
+      vertex 4 1.5 1
+      vertex 0 0 1
+    endloop
+  endfacet
+  facet normal 0.351 -0.936 0
+    outer loop
+      vertex 4 1.5 0
+      vertex 0 0 1
+      vertex 0 0 0
+    endloop
+  endfacet
+endsolid creative_playhead
 ```
 
-<sub>The map is rendered by GitHub’s native GeoJSON viewer, not a screenshot or third-party embed.</sub>
+### Object specification
 
-### Signal layers
-
-| Layer | Carries |
+| Face | Represents |
 | --- | --- |
-| Product | Intent, constraints, interaction, judgment |
-| Media | Time, pixels, codecs, playback, compositing |
-| Systems | Rails, Node.js, PostgreSQL, Redis, queues |
-| Return path | Logs, traces, metrics, and production evidence |
+| Front | The interaction a person can see and control |
+| Depth | Media, services, queues, and render machinery |
+| Reverse | Logs, traces, and evidence returning from production |
+| Point | A dependable creative output |
 
-<details>
-  <summary><code>OPEN LOCAL INVENTORY</code></summary>
-  <br />
+> [!NOTE]
+> GitHub renders STL, Mermaid, GeoJSON, and TopoJSON directly inside Markdown,
+> but interactive STL profiles remain unusually rare.
 
-  [`cinematic-display`](https://github.com/evantayloryates/cinematic-display) ·
-  [`bialetti`](https://github.com/evantayloryates/bialetti) ·
-  [`.hammerspoon`](https://github.com/evantayloryates/.hammerspoon) ·
-  [`dotfiles`](https://github.com/evantayloryates/dotfiles)
-</details>
-
-`COMMS` [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)
+`MATERIALS` React · TypeScript · Rails · Node.js · WebCodecs · WebGL · AWS<br />
+`CONTACT` [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)
