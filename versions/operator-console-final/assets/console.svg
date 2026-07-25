@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
   <title id="title">Taylor's creative systems operator console</title>
-  <desc id="desc">A production console showing Taylor online at the intersection of interface, media, and infrastructure.</desc>
+  <desc id="desc">A production console showing Taylor working across interface, media, and infrastructure.</desc>
   <defs>
     <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#111326"/>
@@ -23,7 +23,7 @@
   <rect x="22" y="22" width="1156" height="52" rx="15" fill="#22233b"/>
   <rect x="22" y="59" width="1156" height="15" fill="#22233b"/>
   <circle cx="53" cy="48" r="7" fill="#ff6b7a"/><circle cx="77" cy="48" r="7" fill="#ffd166"/><circle cx="101" cy="48" r="7" fill="#56e6c2"/>
-  <text x="600" y="54" text-anchor="middle" fill="#8f91a8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">taylor@creative-systems — 120×32</text>
+  <text x="600" y="54" text-anchor="middle" fill="#8f91a8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">taylor@creative-systems | 120×32</text>
   <rect x="22" y="74" width="1156" height="334" fill="url(#scan)"/>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
