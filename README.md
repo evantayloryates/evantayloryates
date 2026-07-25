@@ -1,51 +1,49 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-multiview/assets/multiview.svg"
-    alt="Taylor Yates — creative systems multiview"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-patchbay/assets/patchbay.svg"
+    alt="Taylor Yates — creative systems patchbay"
     width="100%"
   />
 </p>
 
 ```text
-PROGRAM OUT  Taylor Yates / full-stack engineer / Spaceback / New York
-STATUS       All feeds nominal
+RACK 01   TAYLOR YATES   CREATIVE SYSTEMS PATCHBAY   NYC
 ```
 
-## The whole production, not a single monitor.
+## Everything interesting happens in the routing.
 
-I work across the feeds that creative software usually separates: product
-interface, browser media, backend services, rendering, and operations. The job
-is to keep each one strong without losing the picture they make together.
+I’m a full-stack engineer at **Spaceback**. I connect product ideas to
+interfaces, interfaces to media systems, media systems to render
+infrastructure, and production evidence back to better product decisions.
 
-### Feed map
+### Routing sheet
 
-| Feed | Source | Now showing |
-| :---: | --- | --- |
-| `CAM 1` | **Interface** | React, TypeScript, interaction systems, product judgment |
-| `CAM 2` | **Media** | WebCodecs, MediaSource, Canvas, WebGL, playback |
-| `CAM 3` | **Services** | Rails, Node.js, PostgreSQL, Redis, queues |
-| `CAM 4` | **Render** | Creative automation, compositing, output pipelines |
-| `CAM 5` | **Operations** | AWS, Docker, CI, observability, failure recovery |
-| `PGM` | **Experience** | Powerful machinery made direct and dependable |
+| Input | Patched through | Output |
+| --- | --- | --- |
+| A creative constraint | React · TypeScript · interaction design | An interface with a clear point of view |
+| Moving image and sound | WebCodecs · Canvas · WebGL · media APIs | A browser that behaves like a studio |
+| Render intent | Rails · Node.js · PostgreSQL · Redis · queues | Repeatable production output |
+| A failure in the field | Logs · traces · metrics · patient debugging | A system that explains what happened |
+| A manual handoff | Agents · automation · human judgment | More time for the decisions that matter |
 
-### Replay bank
+### Available modules
 
-- [`cinematic-display`](https://github.com/evantayloryates/cinematic-display) — browser-native cinematic layouts
-- [`bialetti`](https://github.com/evantayloryates/bialetti) — runnable video display advertising
-- [`.hammerspoon`](https://github.com/evantayloryates/.hammerspoon) — a programmable macOS workspace
-- [`dotfiles`](https://github.com/evantayloryates/dotfiles) — reproducible production setup
+- [`cinematic-display`](https://github.com/evantayloryates/cinematic-display) — layout and motion module
+- [`bialetti`](https://github.com/evantayloryates/bialetti) — HTML5 video-output module
+- [`.hammerspoon`](https://github.com/evantayloryates/.hammerspoon) — desktop-control module
+- [`dotfiles`](https://github.com/evantayloryates/dotfiles) — environment and setup module
 
 <details>
-  <summary><code>OPEN ENGINEERING CHANNEL</code></summary>
+  <summary><code>REMOVE SERVICE PANEL</code></summary>
   <br />
 
-  I’m most interested in the moments where one feed affects every other:
-  editing decisions that change render architecture, production failures that
-  reveal product problems, and infrastructure improvements that make a new
-  interaction possible.
+  The patch changes with the problem. The constant is an interest in the whole
+  path: what a person is trying to do, what the software promises, what the
+  underlying machinery can support, and how clearly it behaves when something
+  goes wrong.
 </details>
 
-### Comms
+### External connections
 
-`email` → [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)<br />
-`source` → [github.com/evantayloryates](https://github.com/evantayloryates)
+`SEND A` [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)<br />
+`SEND B` [github.com/evantayloryates](https://github.com/evantayloryates)
