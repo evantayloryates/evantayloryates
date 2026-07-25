@@ -3,9 +3,18 @@
 Each folder is a self-contained profile direction. The root `README.md` is the
 published copy selected by `scripts/set-readme-version`.
 
-| Slug | Family role | Direction | Character |
+| Slug | Family role | GitHub-native hook | Character |
 | --- | --- | --- | --- |
-| [`operator-console`](./operator-console/README.md) | Base | Live production console | Technical, playful, code-as-biography |
+| [`operator-console`](./operator-console/README.md) | Base | Code-as-biography | Technical, playful production console |
+| [`operator-console-live-telemetry`](./operator-console-live-telemetry/README.md) | Iteration | Scheduled REST API → theme-aware SVG | A quiet, self-hosted live status surface |
+| [`operator-console-playhead-3d`](./operator-console-playhead-3d/README.md) | Iteration | Interactive ASCII STL model | A portfolio disguised as a draggable object |
+| [`operator-console-schematic`](./operator-console-schematic/README.md) | Iteration | Native Mermaid sequence diagram | An executable-looking system schematic |
+| [`operator-console-signal-map`](./operator-console-signal-map/README.md) | Iteration | Interactive GeoJSON map | A geographic signal field rooted in NYC |
+
+The telemetry workflow lives at
+[`.github/workflows/update-profile-telemetry.yml`](../.github/workflows/update-profile-telemetry.yml)
+because GitHub only discovers Actions from that repository-level directory. Its
+generator and output assets remain encapsulated in the version folder.
 
 ## Archive
 

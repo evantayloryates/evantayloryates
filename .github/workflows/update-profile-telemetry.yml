@@ -1,0 +1,40 @@
+name: Update profile telemetry
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+      timezone: "America/New_York"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-telemetry
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@v7
+
+      - name: Generate telemetry assets
+        run: node versions/operator-console-live-telemetry/scripts/build-telemetry.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changed telemetry
+        run: |
+          if git diff --quiet -- versions/operator-console-live-telemetry/assets; then
+            echo "Public telemetry is unchanged."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add versions/operator-console-live-telemetry/assets
+          git commit -m "Update profile telemetry"
+          git push

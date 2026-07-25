@@ -44,6 +44,18 @@ version_description() {
     operator-console)
       printf 'Technical, playful, code-as-biography'
       ;;
+    operator-console-live-telemetry)
+      printf 'Theme-aware telemetry from GitHub public data'
+      ;;
+    operator-console-playhead-3d)
+      printf 'Interactive native 3D playhead'
+      ;;
+    operator-console-schematic)
+      printf 'Native Mermaid system sequence'
+      ;;
+    operator-console-signal-map)
+      printf 'Interactive GeoJSON signal field'
+      ;;
     *)
       printf 'README profile version'
       ;;

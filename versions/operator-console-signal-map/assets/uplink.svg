@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Taylor Yates — New York signal uplink</title>
+  <desc id="desc">A radar console locates Taylor in New York and traces a creative systems feedback loop.</desc>
+  <defs>
+    <radialGradient id="radar">
+      <stop stop-color="#123b46"/>
+      <stop offset=".56" stop-color="#07171c"/>
+      <stop offset="1" stop-color="#03090b"/>
+    </radialGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#3ddbd9" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#3ddbd9" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="ticks" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".8" fill="#b7f8ef" opacity=".18"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="clip"><rect width="1200" height="430" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="430" fill="#03090b"/>
+    <rect width="1200" height="430" fill="url(#ticks)"/>
+
+    <g transform="translate(920 215)">
+      <circle r="175" fill="url(#radar)" stroke="#3a7278" stroke-width="2"/>
+      <g fill="none" stroke="#3ddbd9" stroke-opacity=".24">
+        <circle r="132"/><circle r="88"/><circle r="44"/>
+        <path d="M-175 0h350M0-175v350M-124-124l248 248M124-124l-248 248"/>
+      </g>
+      <path d="M0 0L-34-171A175 175 0 0 1 124-124Z" fill="url(#sweep)"/>
+      <path d="M-77 51l84-57 68 47-152 10Z" fill="none" stroke="#ff4f64" stroke-width="3"/>
+      <circle cx="-77" cy="51" r="6" fill="#ff4f64"/><circle cx="7" cy="-6" r="8" fill="#ff4f64" filter="url(#glow)"/><circle cx="75" cy="41" r="6" fill="#ff4f64"/>
+      <text x="16" y="-19" fill="#fff1c7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">NYC</text>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <text x="64" y="62" fill="#3ddbd9" font-size="13" letter-spacing="3">UPLINK / 40.7128° N · 74.0060° W</text>
+      <text x="63" y="142" fill="#f4f7f5" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">TAYLOR YATES</text>
+      <text x="66" y="181" fill="#94aaa9" font-size="15" letter-spacing="2">CREATIVE SYSTEMS OPERATOR · NEW YORK</text>
+
+      <g transform="translate(66 238)">
+        <text fill="#687f7e" font-size="11" letter-spacing="2">SIGNAL LOOP</text>
+        <text y="38" fill="#f4f7f5" font-size="17">PRODUCT</text>
+        <path d="M96 31h60" stroke="#3ddbd9" stroke-width="3"/><path d="M150 25l12 6-12 6Z" fill="#3ddbd9"/>
+        <text x="177" y="38" fill="#f4f7f5" font-size="17">MEDIA</text>
+        <path d="M246 31h60" stroke="#3ddbd9" stroke-width="3"/><path d="M300 25l12 6-12 6Z" fill="#3ddbd9"/>
+        <text x="327" y="38" fill="#f4f7f5" font-size="17">SYSTEMS</text>
+        <path d="M0 62h419" stroke="#ff4f64" stroke-width="2"/>
+        <text y="88" fill="#94aaa9" font-size="11">PRODUCTION EVIDENCE RETURNS TO THE START</text>
+      </g>
+
+      <rect x="66" y="365" width="441" height="28" rx="3" fill="#08171b" stroke="#24454a"/>
+      <circle cx="84" cy="379" r="5" fill="#3ddbd9" filter="url(#glow)"/>
+      <text x="99" y="383" fill="#b7f8ef" font-size="10" letter-spacing="1.5">SIGNAL ACQUIRED · SPACEBACK · FULL STACK</text>
+    </g>
+  </g>
+</svg>

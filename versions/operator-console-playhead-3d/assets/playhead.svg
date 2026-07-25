@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Taylor Yates — three-dimensional playhead inspection</title>
+  <desc id="desc">An exploded technical drawing shows the visible interface and the system depth behind it.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#13243b" stroke-opacity=".12"/>
+    </pattern>
+    <linearGradient id="face" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ff6c40"/>
+      <stop offset="1" stop-color="#e4314e"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#17263b" flood-opacity=".22"/>
+    </filter>
+    <clipPath id="clip"><rect width="1200" height="430" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="430" fill="#eef5f7"/>
+    <rect width="1200" height="430" fill="url(#grid)"/>
+    <path d="M0 348h1200v82H0z" fill="#dce8eb"/>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <text x="62" y="58" fill="#32455c" font-size="12" letter-spacing="3">OBJECT STUDY / PLAYHEAD–01 / SCALE 1:1</text>
+      <text x="61" y="137" fill="#102238" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">TAYLOR YATES</text>
+      <text x="63" y="174" fill="#506176" font-size="14" letter-spacing="2">FULL-STACK ENGINEER · CREATIVE SYSTEMS</text>
+
+      <g transform="translate(680 63)" filter="url(#shadow)">
+        <path d="M38 30v288l356-144Z" fill="#bed0d8" stroke="#102238" stroke-width="3"/>
+        <path d="M0 0v288l356-144Z" fill="url(#face)" stroke="#102238" stroke-width="3"/>
+        <path d="M0 0l38 30 356 144-38-30Z" fill="#ff9c5a" stroke="#102238" stroke-width="3"/>
+        <path d="M356 144l38 30L38 318 0 288Z" fill="#bd263e" stroke="#102238" stroke-width="3"/>
+        <circle cx="116" cy="144" r="28" fill="#eef5f7" stroke="#102238" stroke-width="3"/>
+        <path d="M104 127l30 17-30 17Z" fill="#102238"/>
+      </g>
+
+      <g fill="#102238" font-size="11">
+        <text x="62" y="258">VISIBLE FACE</text>
+        <text x="62" y="282">interaction / intent</text>
+        <text x="273" y="258">SYSTEM DEPTH</text>
+        <text x="273" y="282">media / render / ops</text>
+        <text x="505" y="258">OUTPUT POINT</text>
+        <text x="505" y="282">a frame you can trust</text>
+      </g>
+      <g stroke="#e4314e" stroke-width="2">
+        <path d="M62 229h122"/><path d="M273 229h142"/><path d="M505 229h124"/>
+      </g>
+
+      <text x="62" y="379" fill="#506176" font-size="11">ROTATE THE NATIVE STL MODEL BELOW</text>
+      <text x="978" y="379" fill="#e4314e" font-size="11">VIEW: EXPLODED</text>
+    </g>
+  </g>
+</svg>
