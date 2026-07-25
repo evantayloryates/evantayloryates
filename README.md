@@ -1,76 +1,59 @@
-<p align="center">
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-live-telemetry/assets/telemetry-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    srcset="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-live-telemetry/assets/telemetry-light.svg"
+  />
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console/assets/console.svg"
-    alt="Taylor's creative systems operator console"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-live-telemetry/assets/telemetry-light.svg"
+    alt="Taylor Yates — live public GitHub telemetry"
     width="100%"
   />
-</p>
-
-```console
-$ whoami
-Taylor Yates — full-stack engineer, media-tool builder, systems untangler
-
-$ location
-New York, NY
-
-$ current_process
-Building creative technology at Spaceback
-```
-
-### `man taylor`
-
-I build the parts between **“this should be possible”** and **“this works every
-time.”** Most often, that means product interfaces, media pipelines, render
-infrastructure, and the operational glue that lets all three behave like one
-system.
-
-```yaml
-inputs:
-  - product questions with technical consequences
-  - video, motion, and campaign data
-  - workflows that have outgrown manual operation
-
-runtime:
-  interface: [React, TypeScript, HTML, CSS]
-  services: [Rails, Node.js, PostgreSQL, Redis]
-  media: [WebCodecs, MediaSource, Canvas, WebGL, ExtendScript]
-  operations: [AWS, Docker, GitHub Actions, observability]
-
-returns:
-  - tools with a clear point of view
-  - systems that explain themselves
-  - fewer mysterious render failures
-```
-
-### `/proc/experiments`
-
-| PID | Process | State |
-| ---: | --- | :---: |
-| [01](https://github.com/evantayloryates/dotfiles) | Make a development environment reproducible | `running` |
-| [02](https://github.com/evantayloryates/.hammerspoon) | Treat macOS window management as programmable space | `stable` |
-| [03](https://github.com/evantayloryates/cinematic-display) | Explore cinematic display layouts in the browser | `lab` |
-| [04](https://github.com/evantayloryates/bialetti) | Package video as a runnable HTML5 display ad | `archive` |
-
-<details>
-  <summary><code>$ ./about --verbose</code></summary>
-  <br />
-
-  I’m interested in software that touches a medium, not only a database:
-  timelines, players, compositors, renderers, creative editors, and the systems
-  behind them. I’m equally happy tracing a production failure through a queue
-  as I am tuning the interaction that caused the job to exist.
-
-  The recurring goal is simple: make powerful machinery feel direct.
-</details>
-
-### `open_channel`
+</picture>
 
 ```text
-email  →  evantayloryates@gmail.com
-github →  github.com/evantayloryates
+SOURCE  GITHUB REST API       HOST  THIS REPOSITORY       THEME  AUTOMATIC
 ```
 
-<p align="center">
-  <sub>session active · curiosity never daemonized</sub>
-</p>
+## A profile that reports its own state.
 
+I’m **Taylor Yates**, a full-stack engineer at **Spaceback** building creative
+interfaces, media systems, render infrastructure, and the feedback paths
+between them.
+
+The panel above is generated inside this repository from GitHub’s public user,
+repository, and event APIs. It is stored as ordinary SVG—not served by a
+visitor-tracking widget—and automatically selects a light or dark asset to
+match your GitHub theme.
+
+### Stable signal
+
+| Channel | Working material |
+| --- | --- |
+| Interface | React, TypeScript, interaction systems |
+| Media | WebCodecs, MediaSource, Canvas, WebGL |
+| Services | Rails, Node.js, PostgreSQL, Redis, queues |
+| Production | AWS, Docker, rendering, CI, observability |
+
+<details>
+  <summary><code>HOW THE TELEMETRY WORKS</code></summary>
+  <br />
+
+  1. A dependency-free Node script calls GitHub’s public REST endpoints.
+  2. It writes deterministic light and dark SVGs into this version’s assets.
+  3. A scheduled GitHub Action commits only when the public signal changes.
+  4. A `<picture>` element lets GitHub choose the asset for the viewer’s theme.
+
+  [Inspect the generator](./scripts/build-telemetry.mjs) ·
+  [Inspect the workflow](../../.github/workflows/update-profile-telemetry.yml)
+</details>
+
+> [!NOTE]
+> GitHub’s public event API is intentionally not real-time. The panel is a
+> compact public signal, not a surveillance counter.
+
+`CONTACT` [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)
+· `SOURCE` [github.com/evantayloryates](https://github.com/evantayloryates)
