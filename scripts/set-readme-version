@@ -1,0 +1,175 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
+VERSIONS_DIR="${REPO_ROOT}/versions"
+ROOT_README="${REPO_ROOT}/README.md"
+
+usage() {
+  cat <<'EOF'
+Usage:
+  ./scripts/set-readme-version <slug>
+  ./scripts/set-readme-version <slug> --local
+  ./scripts/set-readme-version <slug> --symlink
+  ./scripts/set-readme-version list
+
+The default mode publishes versions/<slug>/README.md to the repository root,
+commits the selected version and root README, and pushes the profile's default
+branch to origin.
+
+Use --local to update the root README without committing or pushing. Use
+--symlink only for local experimentation; GitHub's web UI does not reliably
+render a README.md symbolic link.
+EOF
+}
+
+list_versions() {
+  local version_dir
+
+  for version_dir in "${VERSIONS_DIR}"/*; do
+    if [[ -f "${version_dir}/README.md" ]]; then
+      basename "${version_dir}"
+    fi
+  done
+}
+
+if [[ $# -eq 0 ]]; then
+  usage >&2
+  exit 1
+fi
+
+case "${1}" in
+  -h|--help)
+    usage
+    exit 0
+    ;;
+  list)
+    list_versions
+    exit 0
+    ;;
+esac
+
+slug="${1}"
+mode="${2:-publish}"
+
+if [[ $# -gt 2 ]]; then
+  usage >&2
+  exit 1
+fi
+
+if [[ ! "${slug}" =~ ^[a-z0-9][a-z0-9-]*$ ]]; then
+  printf 'Invalid version slug: %s\n' "${slug}" >&2
+  printf 'Use one of:\n' >&2
+  list_versions >&2
+  exit 1
+fi
+
+source_readme="${VERSIONS_DIR}/${slug}/README.md"
+relative_version_dir="versions/${slug}"
+
+if [[ ! -f "${source_readme}" ]]; then
+  printf 'Unknown README version: %s\n' "${slug}" >&2
+  printf 'Available versions:\n' >&2
+  list_versions >&2
+  exit 1
+fi
+
+publish_copy() {
+  local temp_readme
+
+  temp_readme="$(mktemp "${REPO_ROOT}/.README.md.XXXXXX")"
+  trap 'rm -f "${temp_readme}"' EXIT
+  cp "${source_readme}" "${temp_readme}"
+  chmod 0644 "${temp_readme}"
+  mv -f "${temp_readme}" "${ROOT_README}"
+  trap - EXIT
+}
+
+default_branch() {
+  local default_ref
+
+  default_ref="$(git -C "${REPO_ROOT}" symbolic-ref --quiet --short refs/remotes/origin/HEAD || true)"
+
+  if [[ -z "${default_ref}" ]]; then
+    printf 'Could not determine the default branch from origin/HEAD.\n' >&2
+    printf 'Run "git remote set-head origin --auto" and try again.\n' >&2
+    exit 1
+  fi
+
+  printf '%s\n' "${default_ref#origin/}"
+}
+
+profile_url() {
+  local remote_url
+
+  remote_url="$(git -C "${REPO_ROOT}" remote get-url origin)"
+
+  case "${remote_url}" in
+    https://github.com/*)
+      remote_url="${remote_url%.git}"
+      printf '%s\n' "${remote_url%/*}"
+      ;;
+    git@github.com:*)
+      remote_url="${remote_url#git@github.com:}"
+      remote_url="${remote_url%.git}"
+      printf 'https://github.com/%s\n' "${remote_url%/*}"
+      ;;
+    *)
+      printf 'the GitHub profile associated with origin\n'
+      ;;
+  esac
+}
+
+case "${mode}" in
+  publish)
+    branch="$(git -C "${REPO_ROOT}" branch --show-current)"
+    expected_branch="$(default_branch)"
+
+    if [[ "${branch}" != "${expected_branch}" ]]; then
+      printf 'README publishing must run from the profile default branch.\n' >&2
+      printf 'Current branch: %s\nDefault branch: %s\n' "${branch:-detached HEAD}" "${expected_branch}" >&2
+      exit 1
+    fi
+
+    git -C "${REPO_ROOT}" fetch --quiet origin "${expected_branch}"
+
+    if ! git -C "${REPO_ROOT}" merge-base --is-ancestor "origin/${expected_branch}" HEAD; then
+      printf 'Local %s is behind or has diverged from origin/%s.\n' "${branch}" "${expected_branch}" >&2
+      printf 'Update the branch before publishing a README version.\n' >&2
+      exit 1
+    fi
+
+    publish_copy
+
+    if [[ -n "$(git -C "${REPO_ROOT}" status --porcelain -- README.md "${relative_version_dir}")" ]]; then
+      git -C "${REPO_ROOT}" add -- README.md "${relative_version_dir}"
+      git -C "${REPO_ROOT}" commit --only --message "Set README version: ${slug}" -- README.md "${relative_version_dir}"
+    else
+      printf 'README version "%s" is already selected; no new commit needed.\n' "${slug}"
+    fi
+
+    git -C "${REPO_ROOT}" push origin "HEAD:${expected_branch}"
+    printf 'Published README version "%s" to %s.\n' "${slug}" "$(profile_url)"
+    ;;
+  --local)
+    publish_copy
+    printf 'Selected README version "%s" locally without committing or pushing.\n' "${slug}"
+    ;;
+  --symlink)
+    temp_dir="$(mktemp -d "${REPO_ROOT}/.readme-switch.XXXXXX")"
+    trap 'rm -rf "${temp_dir}"' EXIT
+    ln -s "versions/${slug}/README.md" "${temp_dir}/README.md"
+    mv -f "${temp_dir}/README.md" "${ROOT_README}"
+    rmdir "${temp_dir}"
+    trap - EXIT
+    printf 'Selected README version "%s" with a local symlink.\n' "${slug}"
+    printf 'Before pushing, rerun without --symlink so GitHub can render it.\n'
+    ;;
+  *)
+    printf 'Unknown option: %s\n' "${mode}" >&2
+    usage >&2
+    exit 1
+    ;;
+esac

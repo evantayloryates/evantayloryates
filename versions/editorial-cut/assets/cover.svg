@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Taylor Yates — the web is a media runtime</title>
+  <desc id="desc">An editorial cover about engineering for the moving web.</desc>
+  <defs>
+    <pattern id="grain" width="13" height="13" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="3" r=".7" fill="#171713" opacity=".12"/>
+      <circle cx="9" cy="8" r=".5" fill="#171713" opacity=".08"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="500" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="500" fill="#eee9dd"/>
+    <rect width="1200" height="500" fill="url(#grain)"/>
+    <rect x="830" width="370" height="500" fill="#ff542d"/>
+    <circle cx="1013" cy="242" r="137" fill="#171713"/>
+    <circle cx="1013" cy="242" r="66" fill="#ff542d"/>
+    <path d="M830 383h370v117H830z" fill="#171713"/>
+
+    <g fill="#171713" font-family="Arial, Helvetica, sans-serif">
+      <text x="54" y="64" font-size="15" font-weight="700" letter-spacing="4">ISSUE 001 / CREATIVE SYSTEMS</text>
+      <text x="54" y="163" font-size="82" font-weight="900" letter-spacing="-4">THE WEB IS A</text>
+      <text x="54" y="246" font-size="82" font-weight="900" letter-spacing="-4">MEDIA RUNTIME.</text>
+      <line x1="54" y1="284" x2="751" y2="284" stroke="#171713" stroke-width="3"/>
+      <text x="54" y="330" font-size="19" font-weight="700" letter-spacing="1">INTERFACE / MOTION / INFRASTRUCTURE</text>
+      <text x="54" y="388" font-size="25">TAYLOR YATES</text>
+      <text x="54" y="421" font-size="16" letter-spacing="2">FULL-STACK ENGINEER · NEW YORK</text>
+    </g>
+
+    <g fill="#eee9dd" font-family="Arial, Helvetica, sans-serif">
+      <text x="868" y="61" font-size="14" font-weight="700" letter-spacing="3">MOVING PICTURES</text>
+      <text x="868" y="85" font-size="14" font-weight="700" letter-spacing="3">MOVING DATA</text>
+      <text x="868" y="109" font-size="14" font-weight="700" letter-spacing="3">MOVING SYSTEMS</text>
+      <text x="1013" y="248" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="3">PLAY</text>
+      <text x="864" y="431" font-size="13" letter-spacing="2">BUILD THE TOOL.</text>
+      <text x="864" y="457" font-size="13" letter-spacing="2">TRACE THE SIGNAL.</text>
+      <text x="864" y="483" font-size="13" letter-spacing="2">SHIP THE FRAME.</text>
+    </g>
+
+    <path d="M54 461h697" stroke="#171713" stroke-width="1"/>
+    <g fill="#171713">
+      <rect x="54" y="477" width="207" height="5"/>
+      <rect x="271" y="477" width="116" height="5"/>
+      <rect x="397" y="477" width="298" height="5"/>
+      <rect x="705" y="477" width="46" height="5"/>
+    </g>
+  </g>
+</svg>

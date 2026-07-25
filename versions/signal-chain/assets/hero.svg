@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Taylor Yates — web, motion, and systems</title>
+  <desc id="desc">A cinematic timeline connecting interface, media, and infrastructure.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0e14"/>
+      <stop offset="0.58" stop-color="#111923"/>
+      <stop offset="1" stop-color="#07191a"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#96f7d2"/>
+      <stop offset=".48" stop-color="#53d8fb"/>
+      <stop offset="1" stop-color="#c5ff5d"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".045"/>
+    </pattern>
+    <filter id="glow" x="-30%" y="-100%" width="160%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="430" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="430" rx="28" fill="url(#grid)"/>
+  <path d="M0 339C120 331 202 361 320 344s190-34 310-7 178 19 271-2 191-18 299 0v95H0Z" fill="#53d8fb" opacity=".035"/>
+
+  <text x="64" y="66" fill="#96f7d2" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="4">CREATIVE SYSTEMS / NYC</text>
+  <text x="62" y="160" fill="#f4f7f8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="76" font-weight="720" letter-spacing="-3">TAYLOR YATES</text>
+  <text x="66" y="207" fill="#a8b4bf" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="23" letter-spacing=".8">FULL-STACK ENGINEER · WEB × MOTION × SYSTEMS</text>
+
+  <g transform="translate(66 268)">
+    <rect width="1068" height="78" rx="11" fill="#081015" stroke="#e9f4f4" stroke-opacity=".14"/>
+    <line x1="0" y1="39" x2="1068" y2="39" stroke="#e9f4f4" stroke-opacity=".07"/>
+    <g fill="#7f8c95" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">
+      <text x="12" y="-13">00:00</text><text x="264" y="-13">00:05</text><text x="528" y="-13">00:10</text><text x="792" y="-13">00:15</text><text x="1022" y="-13">00:20</text>
+    </g>
+    <g stroke="#e9f4f4" stroke-opacity=".18">
+      <path d="M0 0V-6M132 0V-6M264 0V-6M396 0V-6M528 0V-6M660 0V-6M792 0V-6M924 0V-6M1068 0V-6"/>
+    </g>
+    <rect x="14" y="12" width="240" height="20" rx="5" fill="#96f7d2" opacity=".88"/>
+    <rect x="267" y="12" width="327" height="20" rx="5" fill="#53d8fb" opacity=".84"/>
+    <rect x="607" y="12" width="447" height="20" rx="5" fill="#c5ff5d" opacity=".78"/>
+    <rect x="89" y="48" width="299" height="17" rx="4" fill="#d6e2e8" opacity=".18"/>
+    <rect x="401" y="48" width="265" height="17" rx="4" fill="#d6e2e8" opacity=".12"/>
+    <rect x="679" y="48" width="294" height="17" rx="4" fill="#d6e2e8" opacity=".16"/>
+    <line x1="594" y1="-18" x2="594" y2="78" stroke="url(#signal)" stroke-width="3" filter="url(#glow)"/>
+    <path d="M588-18h12l-6 8Z" fill="#96f7d2"/>
+  </g>
+
+  <g fill="#9eabb4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.5">
+    <text x="66" y="391">INPUT: PRODUCT</text>
+    <text x="509" y="391">ENGINE: CODE</text>
+    <text x="972" y="391">OUTPUT: EXPERIENCE</text>
+  </g>
+  <circle cx="1134" cy="64" r="6" fill="#c5ff5d" filter="url(#glow)"/>
+  <text x="1114" y="98" fill="#71808a" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">REC</text>
+</svg>
+
