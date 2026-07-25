@@ -10,6 +10,7 @@ published copy selected by `scripts/set-readme-version`.
 | [`operator-console-playhead-3d`](./operator-console-playhead-3d/README.md) | Iteration | Interactive ASCII STL model | A portfolio disguised as a draggable object |
 | [`operator-console-schematic`](./operator-console-schematic/README.md) | Iteration | Native Mermaid sequence diagram | An executable-looking system schematic |
 | [`operator-console-signal-map`](./operator-console-signal-map/README.md) | Iteration | Interactive GeoJSON map | A geographic signal field rooted in NYC |
+| [`operator-console-with-3d`](./operator-console-with-3d/README.md) | Iteration | Multi-object ASCII STL environment | The base console opening into a spatial systems yard |
 
 The telemetry workflow lives at
 [`.github/workflows/update-profile-telemetry.yml`](../.github/workflows/update-profile-telemetry.yml)

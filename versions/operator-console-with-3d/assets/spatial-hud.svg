@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Spatial console control map</title>
+  <desc id="desc">A perspective systems yard with a directional control map in the lower left.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#111326"/>
+      <stop offset="1" stop-color="#080914"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#9b8cff"/>
+      <stop offset="1" stop-color="#56e6c2"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="5" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 4.5H5" stroke="#fff" stroke-opacity=".025"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="340" rx="22" fill="url(#sky)"/>
+  <rect width="1200" height="340" rx="22" fill="url(#scan)"/>
+  <path d="M0 291L600 130l600 161M0 258l600-128 600 128M143 340l457-210M363 340l237-210M837 340L600 130M1057 340L600 130" fill="none" stroke="#29304b" stroke-width="1"/>
+  <path d="M0 291h1200M0 258h1200M0 222h1200M0 184h1200" fill="none" stroke="#29304b" stroke-width="1"/>
+
+  <g stroke="#56e6c2" stroke-width="2" fill="#101525">
+    <path d="M552 154l48-21 48 21v58l-48 25-48-25z"/>
+    <path d="M600 133v104M552 154l48 23 48-23" opacity=".55"/>
+  </g>
+  <circle cx="600" cy="179" r="8" fill="#56e6c2" filter="url(#glow)"/>
+  <text x="600" y="114" text-anchor="middle" fill="#56e6c2" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="2">FOCUS / 00</text>
+
+  <g fill="#15182c" stroke="#9b8cff" stroke-width="2">
+    <path d="M284 191l50-14 50 14v54l-50 17-50-17z"/>
+    <path d="M815 184l35-11 35 11v78l-35 13-35-13z"/>
+    <path d="M944 233l55-14 55 14v43l-55 17-55-17z"/>
+  </g>
+  <g fill="#8f91a8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1">
+    <text x="334" y="278" text-anchor="middle">INTERFACE / 01</text>
+    <text x="850" y="291" text-anchor="middle">MEDIA / 02</text>
+    <text x="999" y="309" text-anchor="middle">RENDER / 03</text>
+  </g>
+
+  <g transform="translate(34 175)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <rect width="232" height="139" rx="10" fill="#0c0e19" stroke="#343958"/>
+    <text x="15" y="23" fill="#8f91a8" font-size="10" letter-spacing="1.5">CONTROL MAP / NATIVE INPUT</text>
+    <g fill="#181d31" stroke="#56607c">
+      <rect x="91" y="34" width="46" height="39" rx="5"/>
+      <rect x="91" y="78" width="46" height="39" rx="5"/>
+      <rect x="40" y="56" width="46" height="39" rx="5"/>
+      <rect x="142" y="56" width="46" height="39" rx="5"/>
+    </g>
+    <g fill="#f2f0ff" text-anchor="middle" font-size="18">
+      <text x="114" y="60">↑</text>
+      <text x="114" y="104">↓</text>
+      <text x="63" y="82">←</text>
+      <text x="165" y="82">→</text>
+    </g>
+    <text x="15" y="131" fill="#56e6c2" font-size="10">SCROLL = DEPTH · RIGHT-DRAG = STRAFE</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="34" y="38" fill="#56e6c2" font-size="12" letter-spacing="2">/DEV/SPATIAL-CONSOLE</text>
+    <text x="1166" y="38" text-anchor="end" fill="#8f91a8" font-size="11">CAMERA / PINNED ORBIT</text>
+    <path d="M34 54h1132" stroke="url(#signal)" stroke-width="2"/>
+    <text x="1166" y="327" text-anchor="end" fill="#ff6b7a" font-size="10" letter-spacing="1">ARROW CLUSTER IS A MAP · GITHUB OWNS VIEWER CHROME</text>
+  </g>
+</svg>

@@ -56,6 +56,9 @@ version_description() {
     operator-console-signal-map)
       printf 'Interactive GeoJSON signal field'
       ;;
+    operator-console-with-3d)
+      printf 'Multi-object native 3D systems yard'
+      ;;
     *)
       printf 'README profile version'
       ;;
