@@ -1,60 +1,83 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-schematic/assets/schematic.svg"
-    alt="Taylor Yates — creative systems schematic"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-signal-map/assets/uplink.svg"
+    alt="Taylor Yates — New York signal uplink"
     width="100%"
   />
 </p>
 
 ```text
-DOCUMENT  TY-CS-01       REV  A       STATUS  WORKING SYSTEM
+UPLINK  NYC       OPERATOR  TAYLOR YATES       SIGNAL  CREATIVE SYSTEMS
 ```
 
-## The interface is only one node.
+## Coordinates are concrete. The loop is conceptual.
 
-I’m **Taylor Yates**, a full-stack engineer at **Spaceback**. I build creative
-tools by treating product decisions, browser media, rendering, and operations
-as one circuit. A change at any node can alter the final output.
+I’m a full-stack engineer at **Spaceback**, working from New York across product
+interfaces, browser media, backend services, rendering, and operations.
 
-### Trace a request through the system
+The interactive map below uses real New York coordinates as the canvas for the
+feedback loop I care about: **product → media → systems → product**. Pan, zoom,
+and inspect it directly in GitHub.
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Person as Person with an idea
-    participant UI as Product interface
-    participant Media as Media engine
-    participant Render as Render system
-    participant Ops as Observability
-
-    Person->>UI: Shape creative intent
-    UI->>Media: Translate intent into time and pixels
-    Media->>Render: Submit a reproducible composition
-    Render->>Ops: Emit progress, evidence, and failures
-    Ops-->>UI: Return the real state of the system
-    UI-->>Person: Deliver an output they can trust
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Taylor / New York",
+        "description": "Creative systems uplink",
+        "marker-color": "#ff4f64",
+        "marker-size": "large",
+        "marker-symbol": "star"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0060, 40.7128]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "product → media → systems → product",
+        "stroke": "#3ddbd9",
+        "stroke-width": 5,
+        "stroke-opacity": 0.9
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-74.0060, 40.7128],
+          [-73.9442, 40.6782],
+          [-73.8648, 40.7380],
+          [-74.0060, 40.7128]
+        ]
+      }
+    }
+  ]
+}
 ```
 
-<sub>The diagram above is rendered natively by GitHub from Mermaid source.</sub>
+<sub>The map is rendered by GitHub’s native GeoJSON viewer, not a screenshot or third-party embed.</sub>
 
-### Component index
+### Signal layers
 
-| Ref | Component | Working material |
-| :---: | --- | --- |
-| `J1` | Interface | React, TypeScript, HTML, CSS, interaction design |
-| `J2` | Media engine | WebCodecs, MediaSource, Canvas, WebGL |
-| `J3` | Services | Rails, Node.js, PostgreSQL, Redis, queues |
-| `J4` | Production | Rendering, AWS, Docker, CI, observability |
-| `J5` | Feedback loop | Debugging evidence turned back into product judgment |
+| Layer | Carries |
+| --- | --- |
+| Product | Intent, constraints, interaction, judgment |
+| Media | Time, pixels, codecs, playback, compositing |
+| Systems | Rails, Node.js, PostgreSQL, Redis, queues |
+| Return path | Logs, traces, metrics, and production evidence |
 
 <details>
-  <summary><code>EXPAND SERVICE NOTES</code></summary>
+  <summary><code>OPEN LOCAL INVENTORY</code></summary>
   <br />
 
-  I’m happiest at the connections: where an editing interaction changes the
-  render contract, where a production failure reveals an interface problem, or
-  where a better system boundary makes a new creative action possible.
+  [`cinematic-display`](https://github.com/evantayloryates/cinematic-display) ·
+  [`bialetti`](https://github.com/evantayloryates/bialetti) ·
+  [`.hammerspoon`](https://github.com/evantayloryates/.hammerspoon) ·
+  [`dotfiles`](https://github.com/evantayloryates/dotfiles)
 </details>
 
-`CONTACT` [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)
-· `SOURCE` [github.com/evantayloryates](https://github.com/evantayloryates)
+`COMMS` [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)
