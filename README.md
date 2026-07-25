@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console/assets/console.svg"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-final/assets/console.svg"
     alt="Taylor's creative systems operator console"
     width="100%"
   />
@@ -8,27 +8,28 @@
 
 ```console
 $ whoami
-Taylor Yates — full-stack engineer, media-tool builder, systems untangler
+Taylor Yates: full-stack engineer, media-tool builder, systems untangler
 
-$ location
+$ where taylor
 New York, NY
 
-$ current_process
-Building creative technology at Spaceback
+$ ps aux | grep 'taylor'
+- Building reusable systems for AI-generated video
+- Making AI-generated spoken dialogue sound natural and worth listening to
+- Building generative interfaces that let people steer AI beyond text prompts
 ```
 
 ### `man taylor`
 
-I build the parts between **“this should be possible”** and **“this works every
-time.”** Most often, that means product interfaces, media pipelines, render
-infrastructure, and the operational glue that lets all three behave like one
-system.
+I work on the gap between "this should be possible" and "this works every
+time." I spend most of my time moving between the interface and the machinery
+underneath it, especially media pipelines and render systems.
 
 ```yaml
 inputs:
-  - product questions with technical consequences
+  - product questions that turn into systems work
   - video, motion, and campaign data
-  - workflows that have outgrown manual operation
+  - manual workflows worth automating
 
 runtime:
   interface: [React, TypeScript, HTML, CSS]
@@ -37,30 +38,18 @@ runtime:
   operations: [AWS, Docker, GitHub Actions, observability]
 
 returns:
-  - tools with a clear point of view
-  - systems that explain themselves
-  - fewer mysterious render failures
+  - tools that feel direct
+  - render failures that are easier to find and fix
 ```
-
-### `/proc/experiments`
-
-| PID | Process | State |
-| ---: | --- | :---: |
-| [01](https://github.com/evantayloryates/dotfiles) | Make a development environment reproducible | `running` |
-| [02](https://github.com/evantayloryates/.hammerspoon) | Treat macOS window management as programmable space | `stable` |
-| [03](https://github.com/evantayloryates/cinematic-display) | Explore cinematic display layouts in the browser | `lab` |
-| [04](https://github.com/evantayloryates/bialetti) | Package video as a runnable HTML5 display ad | `archive` |
 
 <details>
   <summary><code>$ ./about --verbose</code></summary>
   <br />
 
-  I’m interested in software that touches a medium, not only a database:
-  timelines, players, compositors, renderers, creative editors, and the systems
-  behind them. I’m equally happy tracing a production failure through a queue
-  as I am tuning the interaction that caused the job to exist.
-
-  The recurring goal is simple: make powerful machinery feel direct.
+  I like software that works with media directly: timelines, players, editors,
+  renderers, and the systems behind them. Some days I'm tracing a failed job
+  through a queue. Other days I'm working on the interaction that created it.
+  Either way, I want the machinery to feel direct.
 </details>
 
 ### `open_channel`
@@ -69,8 +58,3 @@ returns:
 email  →  evantayloryates@gmail.com
 github →  github.com/evantayloryates
 ```
-
-<p align="center">
-  <sub>session active · curiosity never daemonized</sub>
-</p>
-
