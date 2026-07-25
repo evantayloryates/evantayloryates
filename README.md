@@ -1,98 +1,76 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-playhead-3d/assets/playhead.svg"
-    alt="Taylor Yates — three-dimensional playhead inspection"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console/assets/console.svg"
+    alt="Taylor's creative systems operator console"
     width="100%"
   />
 </p>
 
+```console
+$ whoami
+Taylor Yates — full-stack engineer, media-tool builder, systems untangler
+
+$ location
+New York, NY
+
+$ current_process
+Building creative technology at Spaceback
+```
+
+### `man taylor`
+
+I build the parts between **“this should be possible”** and **“this works every
+time.”** Most often, that means product interfaces, media pipelines, render
+infrastructure, and the operational glue that lets all three behave like one
+system.
+
+```yaml
+inputs:
+  - product questions with technical consequences
+  - video, motion, and campaign data
+  - workflows that have outgrown manual operation
+
+runtime:
+  interface: [React, TypeScript, HTML, CSS]
+  services: [Rails, Node.js, PostgreSQL, Redis]
+  media: [WebCodecs, MediaSource, Canvas, WebGL, ExtendScript]
+  operations: [AWS, Docker, GitHub Actions, observability]
+
+returns:
+  - tools with a clear point of view
+  - systems that explain themselves
+  - fewer mysterious render failures
+```
+
+### `/proc/experiments`
+
+| PID | Process | State |
+| ---: | --- | :---: |
+| [01](https://github.com/evantayloryates/dotfiles) | Make a development environment reproducible | `running` |
+| [02](https://github.com/evantayloryates/.hammerspoon) | Treat macOS window management as programmable space | `stable` |
+| [03](https://github.com/evantayloryates/cinematic-display) | Explore cinematic display layouts in the browser | `lab` |
+| [04](https://github.com/evantayloryates/bialetti) | Package video as a runnable HTML5 display ad | `archive` |
+
+<details>
+  <summary><code>$ ./about --verbose</code></summary>
+  <br />
+
+  I’m interested in software that touches a medium, not only a database:
+  timelines, players, compositors, renderers, creative editors, and the systems
+  behind them. I’m equally happy tracing a production failure through a queue
+  as I am tuning the interaction that caused the job to exist.
+
+  The recurring goal is simple: make powerful machinery feel direct.
+</details>
+
+### `open_channel`
+
 ```text
-OBJECT  PLAYHEAD-01       MATERIAL  INTENT + CODE       VIEW  INTERACTIVE
+email  →  evantayloryates@gmail.com
+github →  github.com/evantayloryates
 ```
 
-## A profile with another dimension.
+<p align="center">
+  <sub>session active · curiosity never daemonized</sub>
+</p>
 
-I’m **Taylor Yates**, a full-stack engineer at **Spaceback** working across
-creative interfaces, browser media, render systems, and production
-infrastructure.
-
-The playhead below is not an image. GitHub turns the ASCII STL source into a
-native interactive 3D viewer. Drag to inspect the object and switch between the
-viewer’s solid and wireframe modes.
-
-```stl
-solid creative_playhead
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 0 0
-      vertex 0 3 0
-      vertex 4 1.5 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0 0 1
-      vertex 4 1.5 1
-      vertex 0 3 1
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 0 0
-      vertex 0 0 1
-      vertex 0 3 1
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 0 0
-      vertex 0 3 1
-      vertex 0 3 0
-    endloop
-  endfacet
-  facet normal 0.351 0.936 0
-    outer loop
-      vertex 0 3 0
-      vertex 0 3 1
-      vertex 4 1.5 1
-    endloop
-  endfacet
-  facet normal 0.351 0.936 0
-    outer loop
-      vertex 0 3 0
-      vertex 4 1.5 1
-      vertex 4 1.5 0
-    endloop
-  endfacet
-  facet normal 0.351 -0.936 0
-    outer loop
-      vertex 4 1.5 0
-      vertex 4 1.5 1
-      vertex 0 0 1
-    endloop
-  endfacet
-  facet normal 0.351 -0.936 0
-    outer loop
-      vertex 4 1.5 0
-      vertex 0 0 1
-      vertex 0 0 0
-    endloop
-  endfacet
-endsolid creative_playhead
-```
-
-### Object specification
-
-| Face | Represents |
-| --- | --- |
-| Front | The interaction a person can see and control |
-| Depth | Media, services, queues, and render machinery |
-| Reverse | Logs, traces, and evidence returning from production |
-| Point | A dependable creative output |
-
-> [!NOTE]
-> GitHub renders STL, Mermaid, GeoJSON, and TopoJSON directly inside Markdown,
-> but interactive STL profiles remain unusually rare.
-
-`MATERIALS` React · TypeScript · Rails · Node.js · WebCodecs · WebGL · AWS<br />
-`CONTACT` [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)
