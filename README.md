@@ -1,59 +1,98 @@
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-live-telemetry/assets/telemetry-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-    srcset="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-live-telemetry/assets/telemetry-light.svg"
-  />
+<p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-live-telemetry/assets/telemetry-light.svg"
-    alt="Taylor Yates — live public GitHub telemetry"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-playhead-3d/assets/playhead.svg"
+    alt="Taylor Yates — three-dimensional playhead inspection"
     width="100%"
   />
-</picture>
+</p>
 
 ```text
-SOURCE  GITHUB REST API       HOST  THIS REPOSITORY       THEME  AUTOMATIC
+OBJECT  PLAYHEAD-01       MATERIAL  INTENT + CODE       VIEW  INTERACTIVE
 ```
 
-## A profile that reports its own state.
+## A profile with another dimension.
 
-I’m **Taylor Yates**, a full-stack engineer at **Spaceback** building creative
-interfaces, media systems, render infrastructure, and the feedback paths
-between them.
+I’m **Taylor Yates**, a full-stack engineer at **Spaceback** working across
+creative interfaces, browser media, render systems, and production
+infrastructure.
 
-The panel above is generated inside this repository from GitHub’s public user,
-repository, and event APIs. It is stored as ordinary SVG—not served by a
-visitor-tracking widget—and automatically selects a light or dark asset to
-match your GitHub theme.
+The playhead below is not an image. GitHub turns the ASCII STL source into a
+native interactive 3D viewer. Drag to inspect the object and switch between the
+viewer’s solid and wireframe modes.
 
-### Stable signal
+```stl
+solid creative_playhead
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 0 3 0
+      vertex 4 1.5 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 1
+      vertex 4 1.5 1
+      vertex 0 3 1
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 0 1
+      vertex 0 3 1
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 3 1
+      vertex 0 3 0
+    endloop
+  endfacet
+  facet normal 0.351 0.936 0
+    outer loop
+      vertex 0 3 0
+      vertex 0 3 1
+      vertex 4 1.5 1
+    endloop
+  endfacet
+  facet normal 0.351 0.936 0
+    outer loop
+      vertex 0 3 0
+      vertex 4 1.5 1
+      vertex 4 1.5 0
+    endloop
+  endfacet
+  facet normal 0.351 -0.936 0
+    outer loop
+      vertex 4 1.5 0
+      vertex 4 1.5 1
+      vertex 0 0 1
+    endloop
+  endfacet
+  facet normal 0.351 -0.936 0
+    outer loop
+      vertex 4 1.5 0
+      vertex 0 0 1
+      vertex 0 0 0
+    endloop
+  endfacet
+endsolid creative_playhead
+```
 
-| Channel | Working material |
+### Object specification
+
+| Face | Represents |
 | --- | --- |
-| Interface | React, TypeScript, interaction systems |
-| Media | WebCodecs, MediaSource, Canvas, WebGL |
-| Services | Rails, Node.js, PostgreSQL, Redis, queues |
-| Production | AWS, Docker, rendering, CI, observability |
-
-<details>
-  <summary><code>HOW THE TELEMETRY WORKS</code></summary>
-  <br />
-
-  1. A dependency-free Node script calls GitHub’s public REST endpoints.
-  2. It writes deterministic light and dark SVGs into this version’s assets.
-  3. A scheduled GitHub Action commits only when the public signal changes.
-  4. A `<picture>` element lets GitHub choose the asset for the viewer’s theme.
-
-  [Inspect the generator](./scripts/build-telemetry.mjs) ·
-  [Inspect the workflow](../../.github/workflows/update-profile-telemetry.yml)
-</details>
+| Front | The interaction a person can see and control |
+| Depth | Media, services, queues, and render machinery |
+| Reverse | Logs, traces, and evidence returning from production |
+| Point | A dependable creative output |
 
 > [!NOTE]
-> GitHub’s public event API is intentionally not real-time. The panel is a
-> compact public signal, not a surveillance counter.
+> GitHub renders STL, Mermaid, GeoJSON, and TopoJSON directly inside Markdown,
+> but interactive STL profiles remain unusually rare.
 
+`MATERIALS` React · TypeScript · Rails · Node.js · WebCodecs · WebGL · AWS<br />
 `CONTACT` [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)
-· `SOURCE` [github.com/evantayloryates](https://github.com/evantayloryates)
