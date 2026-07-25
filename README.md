@@ -1,53 +1,76 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/editorial-cut-liner-notes/assets/liner-notes.svg"
-    alt="Taylor Yates — creative systems liner notes"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console/assets/console.svg"
+    alt="Taylor's creative systems operator console"
     width="100%"
   />
 </p>
 
-<p align="center">
-  <a href="mailto:evantayloryates@gmail.com">Write</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/evantayloryates?tab=repositories">Listen to the source</a>
-  &nbsp;·&nbsp;
-  New York, NY
-</p>
+```console
+$ whoami
+Taylor Yates — full-stack engineer, media-tool builder, systems untangler
 
-## Side A / The work
+$ location
+New York, NY
 
-I’m **Taylor Yates**, a full-stack engineer at **Spaceback**. I make creative
-software with a long signal path: an idea enters through the interface, travels
-through media and render systems, and leaves as something another person can
-see, shape, and ship.
+$ current_process
+Building creative technology at Spaceback
+```
 
-| Track | Title | Running time |
-| :---: | --- | ---: |
-| `A1` | **The expressive interface** — React, TypeScript, interaction, product judgment | `03:42` |
-| `A2` | **The moving browser** — codecs, streams, canvas, WebGL, playback | `04:18` |
-| `A3` | **The dependable machine** — Rails, Node.js, PostgreSQL, Redis, queues | `05:07` |
-| `A4` | **The final export** — rendering, AWS, automation, observability | `02:56` |
+### `man taylor`
 
-## Side B / Selected recordings
+I build the parts between **“this should be possible”** and **“this works every
+time.”** Most often, that means product interfaces, media pipelines, render
+infrastructure, and the operational glue that lets all three behave like one
+system.
 
-- `B1` [cinematic-display](https://github.com/evantayloryates/cinematic-display) — cinematic layouts for the browser
-- `B2` [bialetti](https://github.com/evantayloryates/bialetti) — runnable HTML5 video advertising
-- `B3` [.hammerspoon](https://github.com/evantayloryates/.hammerspoon) — programmable macOS window management
-- `B4` [dotfiles](https://github.com/evantayloryates/dotfiles) — the portable studio setup
+```yaml
+inputs:
+  - product questions with technical consequences
+  - video, motion, and campaign data
+  - workflows that have outgrown manual operation
+
+runtime:
+  interface: [React, TypeScript, HTML, CSS]
+  services: [Rails, Node.js, PostgreSQL, Redis]
+  media: [WebCodecs, MediaSource, Canvas, WebGL, ExtendScript]
+  operations: [AWS, Docker, GitHub Actions, observability]
+
+returns:
+  - tools with a clear point of view
+  - systems that explain themselves
+  - fewer mysterious render failures
+```
+
+### `/proc/experiments`
+
+| PID | Process | State |
+| ---: | --- | :---: |
+| [01](https://github.com/evantayloryates/dotfiles) | Make a development environment reproducible | `running` |
+| [02](https://github.com/evantayloryates/.hammerspoon) | Treat macOS window management as programmable space | `stable` |
+| [03](https://github.com/evantayloryates/cinematic-display) | Explore cinematic display layouts in the browser | `lab` |
+| [04](https://github.com/evantayloryates/bialetti) | Package video as a runnable HTML5 display ad | `archive` |
 
 <details>
-  <summary><strong>Credits & personnel</strong></summary>
+  <summary><code>$ ./about --verbose</code></summary>
   <br />
 
-  Product engineering, interface systems, backend services, media pipelines,
-  render operations, and occasional forensic debugging by Taylor Yates.
+  I’m interested in software that touches a medium, not only a database:
+  timelines, players, compositors, renderers, creative editors, and the systems
+  behind them. I’m equally happy tracing a production failure through a queue
+  as I am tuning the interaction that caused the job to exist.
 
-  Recorded with React, TypeScript, Ruby, Node.js, PostgreSQL, Redis, WebCodecs,
-  Canvas, WebGL, AWS, Docker, and whatever instrument the problem asks for.
+  The recurring goal is simple: make powerful machinery feel direct.
 </details>
 
----
+### `open_channel`
+
+```text
+email  →  evantayloryates@gmail.com
+github →  github.com/evantayloryates
+```
 
 <p align="center">
-  <sub>Play it loud enough to expose the edge cases.</sub>
+  <sub>session active · curiosity never daemonized</sub>
 </p>
+
