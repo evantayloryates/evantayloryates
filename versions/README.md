@@ -12,6 +12,15 @@ published copy selected by `scripts/set-readme-version`.
 
 ## Switch the published version
 
+Run the script without arguments to open the numbered selector. The active
+version is highlighted; enter a number to publish that version immediately.
+
+```sh
+./scripts/set-readme-version
+```
+
+You can also select a version directly by slug:
+
 ```sh
 ./scripts/set-readme-version signal-chain
 ```

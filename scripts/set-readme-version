@@ -10,10 +10,14 @@ ROOT_README="${REPO_ROOT}/README.md"
 usage() {
   cat <<'EOF'
 Usage:
+  ./scripts/set-readme-version
   ./scripts/set-readme-version <slug>
   ./scripts/set-readme-version <slug> --local
   ./scripts/set-readme-version <slug> --symlink
   ./scripts/set-readme-version list
+
+With no arguments, the script presents an interactive numbered version picker
+and highlights the currently published version.
 
 The default mode publishes versions/<slug>/README.md to the repository root,
 commits the selected version and root README, and pushes the profile's default
@@ -35,24 +39,130 @@ list_versions() {
   done
 }
 
+version_description() {
+  case "${1}" in
+    editorial-cut)
+      printf 'Minimal, opinionated, writing-led'
+      ;;
+    operator-console)
+      printf 'Technical, playful, code-as-biography'
+      ;;
+    original)
+      printf 'The archived starting point'
+      ;;
+    signal-chain)
+      printf 'Visual, polished, media-engineering-forward'
+      ;;
+    *)
+      printf 'README profile version'
+      ;;
+  esac
+}
+
+current_version() {
+  local version_dir
+
+  for version_dir in "${VERSIONS_DIR}"/*; do
+    if [[ -f "${version_dir}/README.md" ]] && cmp -s "${ROOT_README}" "${version_dir}/README.md"; then
+      basename "${version_dir}"
+      return 0
+    fi
+  done
+
+  return 1
+}
+
+choose_version() {
+  local current_slug
+  local index
+  local selection
+  local selection_number
+  local version_dir
+  local version_slug
+  local -a version_slugs=()
+
+  for version_dir in "${VERSIONS_DIR}"/*; do
+    if [[ -f "${version_dir}/README.md" ]]; then
+      version_slugs+=("$(basename "${version_dir}")")
+    fi
+  done
+
+  if [[ ${#version_slugs[@]} -eq 0 ]]; then
+    printf 'No README versions found in %s.\n' "${VERSIONS_DIR}" >&2
+    exit 1
+  fi
+
+  current_slug="$(current_version || true)"
+
+  printf 'Select a README version:\n\n'
+
+  for ((index = 0; index < ${#version_slugs[@]}; index++)); do
+    version_slug="${version_slugs[${index}]}"
+
+    if [[ "${version_slug}" == "${current_slug}" ]]; then
+      if [[ -t 1 ]]; then
+        printf '  \033[1;32m%d) %-18s — %s  ← current\033[0m\n' \
+          "$((index + 1))" "${version_slug}" "$(version_description "${version_slug}")"
+      else
+        printf '  %d) %-18s — %s  ← current\n' \
+          "$((index + 1))" "${version_slug}" "$(version_description "${version_slug}")"
+      fi
+    else
+      printf '  %d) %-18s — %s\n' \
+        "$((index + 1))" "${version_slug}" "$(version_description "${version_slug}")"
+    fi
+  done
+
+  while true; do
+    printf '\nEnter a number to publish, or q to cancel: '
+
+    if ! IFS= read -r selection; then
+      printf '\nNo selection received.\n' >&2
+      exit 1
+    fi
+
+    case "${selection}" in
+      q|Q)
+        printf 'No README changes made.\n'
+        exit 0
+        ;;
+    esac
+
+    if [[ "${selection}" =~ ^[0-9]+$ ]]; then
+      selection_number=$((10#${selection}))
+
+      if ((selection_number >= 1 && selection_number <= ${#version_slugs[@]})); then
+        slug="${version_slugs[$((selection_number - 1))]}"
+        mode="publish"
+        printf 'Selected "%s".\n' "${slug}"
+        return 0
+      fi
+    fi
+
+    printf 'Invalid selection. Enter a number from 1 to %d, or q.\n' "${#version_slugs[@]}" >&2
+  done
+}
+
+slug=""
+mode="publish"
+
 if [[ $# -eq 0 ]]; then
-  usage >&2
-  exit 1
+  choose_version
+else
+  case "${1}" in
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    list)
+      list_versions
+      exit 0
+      ;;
+  esac
+
+  slug="${1}"
+  mode="${2:-publish}"
 fi
-
-case "${1}" in
-  -h|--help)
-    usage
-    exit 0
-    ;;
-  list)
-    list_versions
-    exit 0
-    ;;
-esac
-
-slug="${1}"
-mode="${2:-publish}"
 
 if [[ $# -gt 2 ]]; then
   usage >&2
