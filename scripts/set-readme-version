@@ -44,6 +44,9 @@ version_description() {
     operator-console)
       printf 'Technical, playful, code-as-biography'
       ;;
+    operator-console-final)
+      printf 'Focused operator console without experiments'
+      ;;
     operator-console-live-telemetry)
       printf 'Theme-aware telemetry from GitHub public data'
       ;;
@@ -55,9 +58,6 @@ version_description() {
       ;;
     operator-console-signal-map)
       printf 'Interactive GeoJSON signal field'
-      ;;
-    operator-console-with-3d)
-      printf 'Multi-object native 3D systems yard'
       ;;
     *)
       printf 'README profile version'
