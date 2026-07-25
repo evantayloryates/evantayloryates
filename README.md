@@ -1,76 +1,51 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console/assets/console.svg"
-    alt="Taylor's creative systems operator console"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-multiview/assets/multiview.svg"
+    alt="Taylor Yates — creative systems multiview"
     width="100%"
   />
 </p>
 
-```console
-$ whoami
-Taylor Yates — full-stack engineer, media-tool builder, systems untangler
-
-$ location
-New York, NY
-
-$ current_process
-Building creative technology at Spaceback
+```text
+PROGRAM OUT  Taylor Yates / full-stack engineer / Spaceback / New York
+STATUS       All feeds nominal
 ```
 
-### `man taylor`
+## The whole production, not a single monitor.
 
-I build the parts between **“this should be possible”** and **“this works every
-time.”** Most often, that means product interfaces, media pipelines, render
-infrastructure, and the operational glue that lets all three behave like one
-system.
+I work across the feeds that creative software usually separates: product
+interface, browser media, backend services, rendering, and operations. The job
+is to keep each one strong without losing the picture they make together.
 
-```yaml
-inputs:
-  - product questions with technical consequences
-  - video, motion, and campaign data
-  - workflows that have outgrown manual operation
+### Feed map
 
-runtime:
-  interface: [React, TypeScript, HTML, CSS]
-  services: [Rails, Node.js, PostgreSQL, Redis]
-  media: [WebCodecs, MediaSource, Canvas, WebGL, ExtendScript]
-  operations: [AWS, Docker, GitHub Actions, observability]
+| Feed | Source | Now showing |
+| :---: | --- | --- |
+| `CAM 1` | **Interface** | React, TypeScript, interaction systems, product judgment |
+| `CAM 2` | **Media** | WebCodecs, MediaSource, Canvas, WebGL, playback |
+| `CAM 3` | **Services** | Rails, Node.js, PostgreSQL, Redis, queues |
+| `CAM 4` | **Render** | Creative automation, compositing, output pipelines |
+| `CAM 5` | **Operations** | AWS, Docker, CI, observability, failure recovery |
+| `PGM` | **Experience** | Powerful machinery made direct and dependable |
 
-returns:
-  - tools with a clear point of view
-  - systems that explain themselves
-  - fewer mysterious render failures
-```
+### Replay bank
 
-### `/proc/experiments`
-
-| PID | Process | State |
-| ---: | --- | :---: |
-| [01](https://github.com/evantayloryates/dotfiles) | Make a development environment reproducible | `running` |
-| [02](https://github.com/evantayloryates/.hammerspoon) | Treat macOS window management as programmable space | `stable` |
-| [03](https://github.com/evantayloryates/cinematic-display) | Explore cinematic display layouts in the browser | `lab` |
-| [04](https://github.com/evantayloryates/bialetti) | Package video as a runnable HTML5 display ad | `archive` |
+- [`cinematic-display`](https://github.com/evantayloryates/cinematic-display) — browser-native cinematic layouts
+- [`bialetti`](https://github.com/evantayloryates/bialetti) — runnable video display advertising
+- [`.hammerspoon`](https://github.com/evantayloryates/.hammerspoon) — a programmable macOS workspace
+- [`dotfiles`](https://github.com/evantayloryates/dotfiles) — reproducible production setup
 
 <details>
-  <summary><code>$ ./about --verbose</code></summary>
+  <summary><code>OPEN ENGINEERING CHANNEL</code></summary>
   <br />
 
-  I’m interested in software that touches a medium, not only a database:
-  timelines, players, compositors, renderers, creative editors, and the systems
-  behind them. I’m equally happy tracing a production failure through a queue
-  as I am tuning the interaction that caused the job to exist.
-
-  The recurring goal is simple: make powerful machinery feel direct.
+  I’m most interested in the moments where one feed affects every other:
+  editing decisions that change render architecture, production failures that
+  reveal product problems, and infrastructure improvements that make a new
+  interaction possible.
 </details>
 
-### `open_channel`
+### Comms
 
-```text
-email  →  evantayloryates@gmail.com
-github →  github.com/evantayloryates
-```
-
-<p align="center">
-  <sub>session active · curiosity never daemonized</sub>
-</p>
-
+`email` → [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)<br />
+`source` → [github.com/evantayloryates](https://github.com/evantayloryates)
