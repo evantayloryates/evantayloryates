@@ -1,55 +1,53 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/editorial-cut-contact-sheet/assets/contact-sheet.svg"
-    alt="Taylor Yates — a profile arranged as a film contact sheet"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/editorial-cut-liner-notes/assets/liner-notes.svg"
+    alt="Taylor Yates — creative systems liner notes"
     width="100%"
   />
 </p>
 
 <p align="center">
-  <strong>FULL-STACK ENGINEER · CREATIVE SYSTEMS · NEW YORK</strong><br />
-  <a href="mailto:evantayloryates@gmail.com">Email</a>
+  <a href="mailto:evantayloryates@gmail.com">Write</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/evantayloryates?tab=repositories">All source</a>
+  <a href="https://github.com/evantayloryates?tab=repositories">Listen to the source</a>
+  &nbsp;·&nbsp;
+  New York, NY
 </p>
 
-## One system, examined frame by frame.
+## Side A / The work
 
-I’m **Taylor Yates**, a full-stack engineer at **Spaceback**. I build creative
-technology across the whole exposure: the interface where an idea is shaped,
-the media pipeline that carries it, and the infrastructure that makes the
-result repeatable.
+I’m **Taylor Yates**, a full-stack engineer at **Spaceback**. I make creative
+software with a long signal path: an idea enters through the interface, travels
+through media and render systems, and leaves as something another person can
+see, shape, and ship.
 
-### Contact sheet
+| Track | Title | Running time |
+| :---: | --- | ---: |
+| `A1` | **The expressive interface** — React, TypeScript, interaction, product judgment | `03:42` |
+| `A2` | **The moving browser** — codecs, streams, canvas, WebGL, playback | `04:18` |
+| `A3` | **The dependable machine** — Rails, Node.js, PostgreSQL, Redis, queues | `05:07` |
+| `A4` | **The final export** — rendering, AWS, automation, observability | `02:56` |
 
-| Roll / frame | What comes into focus |
-| --- | --- |
-| `01 / PRODUCT` | Interfaces with enough point of view to guide, but enough room to create |
-| `02 / MEDIA` | Browser video, canvas, codecs, playback, compositing, and motion |
-| `03 / SYSTEMS` | Rails, Node.js, queues, data, APIs, and render infrastructure |
-| `04 / OPERATIONS` | Observability and automation that turn one successful render into a dependable workflow |
+## Side B / Selected recordings
 
-### Selected exposures
-
-| Frame | Experiment | Subject |
-| :---: | --- | --- |
-| `A–12` | [cinematic-display](https://github.com/evantayloryates/cinematic-display) | Cinematic display layouts in the browser |
-| `B–03` | [bialetti](https://github.com/evantayloryates/bialetti) | Runnable HTML5 video advertising |
-| `C–08` | [.hammerspoon](https://github.com/evantayloryates/.hammerspoon) | macOS windows as programmable space |
-| `D–01` | [dotfiles](https://github.com/evantayloryates/dotfiles) | A portable environment behind the work |
+- `B1` [cinematic-display](https://github.com/evantayloryates/cinematic-display) — cinematic layouts for the browser
+- `B2` [bialetti](https://github.com/evantayloryates/bialetti) — runnable HTML5 video advertising
+- `B3` [.hammerspoon](https://github.com/evantayloryates/.hammerspoon) — programmable macOS window management
+- `B4` [dotfiles](https://github.com/evantayloryates/dotfiles) — the portable studio setup
 
 <details>
-  <summary><strong>Darkroom notes / working materials</strong></summary>
+  <summary><strong>Credits & personnel</strong></summary>
   <br />
 
-  **Surface** — React, TypeScript, JavaScript, HTML, CSS<br />
-  **Runtime** — Ruby on Rails, Node.js, PostgreSQL, Redis<br />
-  **Medium** — WebCodecs, MediaSource, Canvas, WebGL, ExtendScript<br />
-  **Delivery** — AWS, Docker, CI, render automation, observability
+  Product engineering, interface systems, backend services, media pipelines,
+  render operations, and occasional forensic debugging by Taylor Yates.
+
+  Recorded with React, TypeScript, Ruby, Node.js, PostgreSQL, Redis, WebCodecs,
+  Canvas, WebGL, AWS, Docker, and whatever instrument the problem asks for.
 </details>
 
-<br />
+---
 
 <p align="center">
-  <sub>The contact sheet is where isolated frames become a point of view.</sub>
+  <sub>Play it loud enough to expose the edge cases.</sub>
 </p>
