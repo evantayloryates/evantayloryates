@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-patchbay/assets/patchbay.svg"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/.archive/operator-console-patchbay/assets/patchbay.svg"
     alt="Taylor Yates — creative systems patchbay"
     width="100%"
   />

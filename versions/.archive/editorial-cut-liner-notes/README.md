@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/editorial-cut-liner-notes/assets/liner-notes.svg"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/.archive/editorial-cut-liner-notes/assets/liner-notes.svg"
     alt="Taylor Yates — creative systems liner notes"
     width="100%"
   />

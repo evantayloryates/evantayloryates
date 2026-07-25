@@ -5,12 +5,7 @@ published copy selected by `scripts/set-readme-version`.
 
 | Slug | Family role | Direction | Character |
 | --- | --- | --- | --- |
-| [`editorial-cut`](./editorial-cut/README.md) | Base | Independent magazine profile | Minimal, opinionated, writing-led |
-| [`editorial-cut-contact-sheet`](./editorial-cut-contact-sheet/README.md) | Iteration | Film contact sheet | Capabilities become frames in a deliberately sequenced body of work |
-| [`editorial-cut-liner-notes`](./editorial-cut-liner-notes/README.md) | Iteration | Album liner notes | Practice and public source become Side A and Side B |
 | [`operator-console`](./operator-console/README.md) | Base | Live production console | Technical, playful, code-as-biography |
-| [`operator-console-multiview`](./operator-console-multiview/README.md) | Iteration | Broadcast control room | Six feeds make the full production visible at once |
-| [`operator-console-patchbay`](./operator-console-patchbay/README.md) | Iteration | Physical signal router | Inputs and outputs are visibly connected across the stack |
 
 ## Archive
 
@@ -19,6 +14,11 @@ from the interactive selector:
 
 - [Original starting point](./.archive/original/README.md)
 - [Signal Chain](./.archive/signal-chain/README.md)
+- [Editorial Cut](./.archive/editorial-cut/README.md)
+- [Editorial Cut — Contact Sheet](./.archive/editorial-cut-contact-sheet/README.md)
+- [Editorial Cut — Liner Notes](./.archive/editorial-cut-liner-notes/README.md)
+- [Operator Console — Multiview](./.archive/operator-console-multiview/README.md)
+- [Operator Console — Patchbay](./.archive/operator-console-patchbay/README.md)
 
 ## Switch the published version
 
@@ -32,7 +32,7 @@ version is highlighted; enter a number to publish that version immediately.
 You can also select a version directly by slug:
 
 ```sh
-./scripts/set-readme-version signal-chain
+./scripts/set-readme-version operator-console
 ```
 
 The normal command copies the selected version into the root, commits the root
@@ -44,7 +44,7 @@ does not reliably render a root README that is a symbolic link. To switch
 locally without committing or pushing, use `--local`:
 
 ```sh
-./scripts/set-readme-version editorial-cut --local
+./scripts/set-readme-version operator-console --local
 ```
 
 For local-only symlink experimentation, `--symlink` is also available:

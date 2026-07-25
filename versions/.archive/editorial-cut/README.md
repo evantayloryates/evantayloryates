@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/editorial-cut/assets/cover.svg"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/.archive/editorial-cut/assets/cover.svg"
     alt="Taylor Yates — the web is a media runtime"
     width="100%"
   />

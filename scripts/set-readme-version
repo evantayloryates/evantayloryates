@@ -41,23 +41,8 @@ list_versions() {
 
 version_description() {
   case "${1}" in
-    editorial-cut)
-      printf 'Minimal, opinionated, writing-led'
-      ;;
-    editorial-cut-contact-sheet)
-      printf 'Film frames, timecodes, and visual sequencing'
-      ;;
-    editorial-cut-liner-notes)
-      printf 'Album packaging with Side A and Side B'
-      ;;
     operator-console)
       printf 'Technical, playful, code-as-biography'
-      ;;
-    operator-console-multiview)
-      printf 'Broadcast control room with six live feeds'
-      ;;
-    operator-console-patchbay)
-      printf 'Physical signal routing across the full stack'
       ;;
     *)
       printf 'README profile version'

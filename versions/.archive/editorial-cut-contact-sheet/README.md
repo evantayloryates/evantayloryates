@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/editorial-cut-contact-sheet/assets/contact-sheet.svg"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/.archive/editorial-cut-contact-sheet/assets/contact-sheet.svg"
     alt="Taylor Yates — a profile arranged as a film contact sheet"
     width="100%"
   />
