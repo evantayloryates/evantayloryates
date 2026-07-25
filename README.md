@@ -1,98 +1,60 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-playhead-3d/assets/playhead.svg"
-    alt="Taylor Yates — three-dimensional playhead inspection"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/operator-console-schematic/assets/schematic.svg"
+    alt="Taylor Yates — creative systems schematic"
     width="100%"
   />
 </p>
 
 ```text
-OBJECT  PLAYHEAD-01       MATERIAL  INTENT + CODE       VIEW  INTERACTIVE
+DOCUMENT  TY-CS-01       REV  A       STATUS  WORKING SYSTEM
 ```
 
-## A profile with another dimension.
+## The interface is only one node.
 
-I’m **Taylor Yates**, a full-stack engineer at **Spaceback** working across
-creative interfaces, browser media, render systems, and production
-infrastructure.
+I’m **Taylor Yates**, a full-stack engineer at **Spaceback**. I build creative
+tools by treating product decisions, browser media, rendering, and operations
+as one circuit. A change at any node can alter the final output.
 
-The playhead below is not an image. GitHub turns the ASCII STL source into a
-native interactive 3D viewer. Drag to inspect the object and switch between the
-viewer’s solid and wireframe modes.
+### Trace a request through the system
 
-```stl
-solid creative_playhead
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 0 0
-      vertex 0 3 0
-      vertex 4 1.5 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0 0 1
-      vertex 4 1.5 1
-      vertex 0 3 1
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 0 0
-      vertex 0 0 1
-      vertex 0 3 1
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 0 0
-      vertex 0 3 1
-      vertex 0 3 0
-    endloop
-  endfacet
-  facet normal 0.351 0.936 0
-    outer loop
-      vertex 0 3 0
-      vertex 0 3 1
-      vertex 4 1.5 1
-    endloop
-  endfacet
-  facet normal 0.351 0.936 0
-    outer loop
-      vertex 0 3 0
-      vertex 4 1.5 1
-      vertex 4 1.5 0
-    endloop
-  endfacet
-  facet normal 0.351 -0.936 0
-    outer loop
-      vertex 4 1.5 0
-      vertex 4 1.5 1
-      vertex 0 0 1
-    endloop
-  endfacet
-  facet normal 0.351 -0.936 0
-    outer loop
-      vertex 4 1.5 0
-      vertex 0 0 1
-      vertex 0 0 0
-    endloop
-  endfacet
-endsolid creative_playhead
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Person as Person with an idea
+    participant UI as Product interface
+    participant Media as Media engine
+    participant Render as Render system
+    participant Ops as Observability
+
+    Person->>UI: Shape creative intent
+    UI->>Media: Translate intent into time and pixels
+    Media->>Render: Submit a reproducible composition
+    Render->>Ops: Emit progress, evidence, and failures
+    Ops-->>UI: Return the real state of the system
+    UI-->>Person: Deliver an output they can trust
 ```
 
-### Object specification
+<sub>The diagram above is rendered natively by GitHub from Mermaid source.</sub>
 
-| Face | Represents |
-| --- | --- |
-| Front | The interaction a person can see and control |
-| Depth | Media, services, queues, and render machinery |
-| Reverse | Logs, traces, and evidence returning from production |
-| Point | A dependable creative output |
+### Component index
 
-> [!NOTE]
-> GitHub renders STL, Mermaid, GeoJSON, and TopoJSON directly inside Markdown,
-> but interactive STL profiles remain unusually rare.
+| Ref | Component | Working material |
+| :---: | --- | --- |
+| `J1` | Interface | React, TypeScript, HTML, CSS, interaction design |
+| `J2` | Media engine | WebCodecs, MediaSource, Canvas, WebGL |
+| `J3` | Services | Rails, Node.js, PostgreSQL, Redis, queues |
+| `J4` | Production | Rendering, AWS, Docker, CI, observability |
+| `J5` | Feedback loop | Debugging evidence turned back into product judgment |
 
-`MATERIALS` React · TypeScript · Rails · Node.js · WebCodecs · WebGL · AWS<br />
+<details>
+  <summary><code>EXPAND SERVICE NOTES</code></summary>
+  <br />
+
+  I’m happiest at the connections: where an editing interaction changes the
+  render contract, where a production failure reveals an interface problem, or
+  where a better system boundary makes a new creative action possible.
+</details>
+
 `CONTACT` [evantayloryates@gmail.com](mailto:evantayloryates@gmail.com)
+· `SOURCE` [github.com/evantayloryates](https://github.com/evantayloryates)
