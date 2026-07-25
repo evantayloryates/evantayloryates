@@ -17,33 +17,37 @@ $ ps aux | grep 'taylor'
 - Building reusable systems for AI-generated video
 - Making AI-generated spoken dialogue sound natural and worth listening to
 - Building generative interfaces that let people steer AI beyond text prompts
+
+$ man taylor
 ```
 
-### `man taylor`
+```text
+TAYLOR(1)                  General Commands Manual                  TAYLOR(1)
 
-I work on the gap between "this should be possible" and "this works every
-time." I spend most of my time moving between the interface and the machinery
-underneath it, especially media pipelines and render systems.
+NAME
+       taylor - build creative tools and the systems that make them reliable
 
-```yaml
-inputs:
-  - product questions that turn into systems work
-  - video, motion, and campaign data
-  - manual workflows worth automating
+SYNOPSIS
+       taylor about [--verbose]
 
-runtime:
-  interface: [React, TypeScript, HTML, CSS]
-  services: [Rails, Node.js, PostgreSQL, Redis]
-  media: [WebCodecs, MediaSource, Canvas, WebGL, ExtendScript]
-  operations: [AWS, Docker, GitHub Actions, observability]
+DESCRIPTION
+       taylor moves between the interface and the machinery underneath it,
+       especially media pipelines and render systems. It accepts product
+       questions, media-heavy work, and manual workflows as input.
 
-returns:
-  - tools that feel direct
-  - render failures that are easier to find and fix
+ENVIRONMENT
+       interface    React, TypeScript, HTML, CSS
+       services     Rails, Node.js, PostgreSQL, Redis
+       media        WebCodecs, MediaSource, Canvas, WebGL, ExtendScript
+       operations   AWS, Docker, GitHub Actions, observability
+
+OUTPUT
+       Creative tools that feel direct, backed by systems whose failures are
+       easier to find and fix.
 ```
 
 <details>
-  <summary><code>$ ./about --verbose</code></summary>
+  <summary><code>$ taylor about --verbose</code></summary>
   <br />
 
   I like software that works with media directly: timelines, players, editors,
