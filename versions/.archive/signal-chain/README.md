@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/signal-chain/assets/hero.svg"
+    src="https://raw.githubusercontent.com/evantayloryates/evantayloryates/master/versions/.archive/signal-chain/assets/hero.svg"
     alt="Taylor Yates — web, motion, and systems"
     width="100%"
   />

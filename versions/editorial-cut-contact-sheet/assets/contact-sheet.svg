@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Taylor Yates — a profile arranged as a film contact sheet</title>
+  <desc id="desc">Six film frames show interface, motion, systems, and production as parts of one body of work.</desc>
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1727c7"/>
+      <stop offset="1" stop-color="#07105c"/>
+    </linearGradient>
+    <pattern id="grain" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="4" r=".8" fill="#f7f3dc" opacity=".08"/>
+      <circle cx="14" cy="11" r=".55" fill="#f7f3dc" opacity=".06"/>
+    </pattern>
+    <clipPath id="rounded"><rect width="1200" height="520" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <rect width="1200" height="520" fill="#070818"/>
+    <rect x="27" y="27" width="1146" height="466" rx="8" fill="url(#blue)"/>
+    <rect x="27" y="27" width="1146" height="466" rx="8" fill="url(#grain)"/>
+
+    <g fill="#f7f3dc">
+      <rect x="48" y="10" width="51" height="22" rx="3"/><rect x="133" y="10" width="51" height="22" rx="3"/><rect x="218" y="10" width="51" height="22" rx="3"/><rect x="303" y="10" width="51" height="22" rx="3"/><rect x="388" y="10" width="51" height="22" rx="3"/><rect x="473" y="10" width="51" height="22" rx="3"/><rect x="558" y="10" width="51" height="22" rx="3"/><rect x="643" y="10" width="51" height="22" rx="3"/><rect x="728" y="10" width="51" height="22" rx="3"/><rect x="813" y="10" width="51" height="22" rx="3"/><rect x="898" y="10" width="51" height="22" rx="3"/><rect x="983" y="10" width="51" height="22" rx="3"/><rect x="1068" y="10" width="51" height="22" rx="3"/>
+      <rect x="48" y="488" width="51" height="22" rx="3"/><rect x="133" y="488" width="51" height="22" rx="3"/><rect x="218" y="488" width="51" height="22" rx="3"/><rect x="303" y="488" width="51" height="22" rx="3"/><rect x="388" y="488" width="51" height="22" rx="3"/><rect x="473" y="488" width="51" height="22" rx="3"/><rect x="558" y="488" width="51" height="22" rx="3"/><rect x="643" y="488" width="51" height="22" rx="3"/><rect x="728" y="488" width="51" height="22" rx="3"/><rect x="813" y="488" width="51" height="22" rx="3"/><rect x="898" y="488" width="51" height="22" rx="3"/><rect x="983" y="488" width="51" height="22" rx="3"/><rect x="1068" y="488" width="51" height="22" rx="3"/>
+    </g>
+
+    <g stroke="#fff16b" stroke-width="3" fill="#090b27">
+      <rect x="55" y="58" width="345" height="186"/>
+      <rect x="427" y="58" width="345" height="186"/>
+      <rect x="799" y="58" width="345" height="186"/>
+      <rect x="55" y="269" width="345" height="186"/>
+      <rect x="427" y="269" width="345" height="186"/>
+      <rect x="799" y="269" width="345" height="186"/>
+    </g>
+
+    <g font-family="Arial Narrow, Arial, sans-serif">
+      <text x="79" y="91" fill="#fff16b" font-size="13" font-weight="700" letter-spacing="3">FRAME 01 / ID</text>
+      <text x="78" y="154" fill="#f7f3dc" font-size="42" font-weight="900">TAYLOR</text>
+      <text x="78" y="196" fill="#f7f3dc" font-size="42" font-weight="900">YATES</text>
+      <text x="79" y="225" fill="#9aa7ff" font-size="12" letter-spacing="2">NYC · CREATIVE SYSTEMS</text>
+
+      <text x="451" y="91" fill="#fff16b" font-size="13" font-weight="700" letter-spacing="3">FRAME 02 / INTERFACE</text>
+      <rect x="468" y="116" width="264" height="92" rx="8" fill="#2639dd"/>
+      <rect x="486" y="135" width="117" height="15" rx="3" fill="#f7f3dc"/>
+      <rect x="486" y="162" width="207" height="9" rx="3" fill="#9aa7ff"/>
+      <circle cx="696" cy="188" r="12" fill="#fff16b"/>
+
+      <text x="823" y="91" fill="#fff16b" font-size="13" font-weight="700" letter-spacing="3">FRAME 03 / MOTION</text>
+      <path d="M828 176c34-70 65 71 99 0s64 70 99 0 62 62 93 0" fill="none" stroke="#fff16b" stroke-width="5"/>
+      <path d="M827 205h292" stroke="#9aa7ff" stroke-width="2" stroke-dasharray="5 7"/>
+
+      <text x="79" y="302" fill="#fff16b" font-size="13" font-weight="700" letter-spacing="3">FRAME 04 / SYSTEMS</text>
+      <g fill="#2639dd" stroke="#9aa7ff" stroke-width="2">
+        <circle cx="118" cy="365" r="24"/><circle cx="227" cy="332" r="24"/><circle cx="337" cy="384" r="24"/>
+      </g>
+      <path d="M139 357l65-19M249 343l65 30M142 375l171 8" stroke="#fff16b" stroke-width="3"/>
+
+      <text x="451" y="302" fill="#fff16b" font-size="13" font-weight="700" letter-spacing="3">FRAME 05 / PRODUCTION</text>
+      <rect x="468" y="329" width="267" height="85" rx="7" fill="#101444" stroke="#9aa7ff"/>
+      <rect x="485" y="347" width="169" height="10" rx="3" fill="#2639dd"/>
+      <rect x="485" y="370" width="221" height="10" rx="3" fill="#2639dd"/>
+      <rect x="485" y="393" width="198" height="10" rx="3" fill="#fff16b"/>
+
+      <text x="823" y="302" fill="#fff16b" font-size="13" font-weight="700" letter-spacing="3">FRAME 06 / OUTPUT</text>
+      <circle cx="969" cy="368" r="55" fill="#2639dd"/>
+      <path d="M950 340l49 28-49 28Z" fill="#fff16b"/>
+      <path d="M827 432h292" stroke="#9aa7ff" stroke-width="2"/>
+    </g>
+
+    <g fill="none" stroke="#ff6685" stroke-width="6" stroke-linecap="round">
+      <path d="M45 48c121-24 269-16 373 2"/>
+      <path d="M785 253c118-15 252-11 376 4"/>
+      <circle cx="967" cy="367" r="78"/>
+    </g>
+    <text x="1027" y="451" fill="#ff6685" font-family="Marker Felt, cursive" font-size="22" transform="rotate(-7 1027 451)">use this one</text>
+  </g>
+</svg>
