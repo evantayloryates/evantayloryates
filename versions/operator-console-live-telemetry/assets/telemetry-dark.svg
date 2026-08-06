@@ -37,7 +37,7 @@
     <text x="414" y="30" class="label">EVENT SAMPLE</text>
     <text x="18" y="79" class="value">30</text>
     <text x="216" y="79" class="value">29</text>
-    <text x="414" y="79" class="value">5</text>
+    <text x="414" y="79" class="value">28</text>
     <path d="M18 96h144M216 96h144M414 96h144" stroke="#6fffd2" stroke-width="3"/>
   </g>
 
