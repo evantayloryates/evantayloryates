@@ -37,17 +37,17 @@
     <text x="414" y="30" class="label">EVENT SAMPLE</text>
     <text x="18" y="79" class="value">30</text>
     <text x="216" y="79" class="value">29</text>
-    <text x="414" y="79" class="value">24</text>
+    <text x="414" y="79" class="value">25</text>
     <path d="M18 96h144M216 96h144M414 96h144" stroke="#6fffd2" stroke-width="3"/>
   </g>
 
   <path d="M672 204v151" stroke="#2a3445"/>
   <text x="710" y="212" class="label">RECENT PUBLIC ROUTES</text>
   <circle cx="721" cy="235" r="5" fill="#6fffd2"/>
-        <text x="738" y="240" class="route">hexmodal</text>
-        <text x="1107" y="240" text-anchor="end" class="date">JUL 29, 2026</text><circle cx="721" cy="285" r="5" fill="#6fffd2"/>
-        <text x="738" y="290" class="route">dotfiles</text>
-        <text x="1107" y="290" text-anchor="end" class="date">JUL 22, 2026</text><circle cx="721" cy="335" r="5" fill="#6fffd2"/>
+        <text x="738" y="240" class="route">dotfiles</text>
+        <text x="1107" y="240" text-anchor="end" class="date">AUG 07, 2026</text><circle cx="721" cy="285" r="5" fill="#6fffd2"/>
+        <text x="738" y="290" class="route">hexmodal</text>
+        <text x="1107" y="290" text-anchor="end" class="date">JUL 29, 2026</text><circle cx="721" cy="335" r="5" fill="#6fffd2"/>
         <text x="738" y="340" class="route">isabella</text>
         <text x="1107" y="340" text-anchor="end" class="date">FEB 13, 2026</text>
 
